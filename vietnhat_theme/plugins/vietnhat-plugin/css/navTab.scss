@@ -1,0 +1,49 @@
+@mixin set_transition($p, $t) {
+     -webkit-transition: $p $t;
+    -moz-transition: $p $t;
+    -o-transition: $p $t;
+    -ms-transition: $p $t;
+} 
+
+.whNavTab {
+
+	& .whGTab {
+
+		& > div {
+			@include set_transition(all, .2s);
+		}
+
+		& > div.active, & > div:hover {
+
+			background-color: #236baa;
+			color: #fff;
+
+		}
+
+	}
+
+	& .whGTabContent {		
+
+		position: relative;
+
+		& > div {
+
+			@include set_transition(all, .2s);			
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			z-index: 0;
+
+		}
+
+		& > div.active {
+
+			opacity: 1;
+			z-index: 10;
+
+		}
+
+	}
+
+}

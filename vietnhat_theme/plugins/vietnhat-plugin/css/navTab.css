@@ -1,0 +1,25 @@
+.whNavTab .whGTab > div {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s; }
+.whNavTab .whGTab > div.active, .whNavTab .whGTab > div:hover {
+  background-color: #236baa;
+  color: #fff; }
+.whNavTab .whGTabContent {
+  position: relative; }
+  .whNavTab .whGTabContent > div {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0; }
+  .whNavTab .whGTabContent > div.active {
+    opacity: 1;
+    z-index: 10; }
+
+/*# sourceMappingURL=navTab.css.map */
