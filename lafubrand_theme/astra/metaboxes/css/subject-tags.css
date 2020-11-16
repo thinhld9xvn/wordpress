@@ -1,0 +1,28 @@
+.subject-tags-added .subject-tag-item {
+
+    position: relative;
+    display: table;
+
+}
+
+.subject-tags-added .subject-tag-item:not(:first-child) {
+
+    margin-top: 5px;
+    
+}
+
+.subject-tags-added .subject-tag-item .subject-tag-name {
+    padding-right: 20px;
+}
+
+.subject-tags-added .subject-tag-item .subject-tag-remove {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #ccc;
+    width: 15px;
+    height: 15px;
+}

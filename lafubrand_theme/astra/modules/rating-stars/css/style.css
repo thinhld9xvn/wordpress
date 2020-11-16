@@ -1,0 +1,47 @@
+.lafuratingbox {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratingBoxDisabled {
+
+	pointer-events: none;
+    opacity: .2;
+}
+
+}
+
+.lafuratingbox .ratingbox {
+    padding-left: 30px;
+}
+
+.lafuratingbox .ratingbox .star:not(:first-child) {
+    margin-left: 5px;
+}
+
+.lafuratingbox .ratingbox .star.hover {
+    color: #ecb80a;
+}
+
+.lafuratingbox .ratedMessage,
+.lafuratingbox .thankyouMessage {
+
+	font-size: 13px;
+
+}
+
+.lafuratingbox .ratedMessage .fa {
+	font-size: 8px;
+    position: relative;
+    top: -4px;
+}
+
+.lafuratingbox .lafuratingbox_ajaxloading {
+	margin-top: 10px;
+}
+
+.lafuratingbox .lafuratingbox_ajaxloading .fa {
+	font-size: 20px;
+}

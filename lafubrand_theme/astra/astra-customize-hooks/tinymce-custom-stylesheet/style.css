@@ -1,0 +1,9 @@
+body#tinymce.mce-content-body.content {
+    font-family: 'Tahoma';
+    font-size: 15px !important;
+    line-height: 2.5em !important;
+}
+
+p, ul, ol, div {
+	margin-bottom: 0 !important;
+}
