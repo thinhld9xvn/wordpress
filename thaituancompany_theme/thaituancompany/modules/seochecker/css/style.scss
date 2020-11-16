@@ -1,0 +1,17 @@
+.seochecker-msg {
+
+	display: block;
+
+	&.validate {
+
+		color: green;
+
+	}
+
+	&.error {
+
+		color: red;
+		
+	}
+
+}
