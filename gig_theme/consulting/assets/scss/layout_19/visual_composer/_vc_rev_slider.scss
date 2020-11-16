@@ -1,0 +1,128 @@
+.consulting-rev-title{
+  font-size: 36px !important;
+  line-height: 48px !important;
+  color: #ffffff !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600 !important;
+  letter-spacing: -1px !important;
+
+  mark {
+    color: $stm_secondary_color;
+  }
+}
+
+.consulting-rev-title-2{
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: $stm_base_color !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-3{
+  font-size: 45px !important;
+  line-height: 45px !important;
+  color: $stm_base_color !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-icon{
+  font-size: 72px;
+  color: $stm_secondary_color;
+  padding-left: 1px;
+}
+
+.consulting-rev-text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  line-height: 30px !important;
+  font-size: 18px !important;
+}
+
+.consulting-rev-text-2{
+  color: $stm_base_color !important;
+  line-height: 22px !important;
+  font-size: 14px !important;
+}
+
+.tp-caption{
+  .button{
+    transition: all .3s ease !important;
+    margin-right: 16px !important;
+    text-transform: uppercase !important;
+  }
+  @media only screen and (max-width: 991px) {
+    .vc_btn3-color-theme_style_3,
+    .vc_btn3-color-link {
+      font-size: 14px !important;
+      .vc_btn3-icon {
+        line-height: 20px !important;
+      }
+    }
+    .vc_btn3-color-link {
+      margin-left: 30px !important;
+    }
+  }
+}
+
+.rev_slider_wrapper .vc_btn3-color-link {
+  color: #ffffff !important;
+}
+
+body .tparrows{
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: 3px solid #bac1c6;
+  @include transition();
+  &:hover{
+    background: $stm_base_color;
+    border-color: $stm_base_color;
+    &:before{
+      color: #fff;
+    }
+  }
+  &.tp-leftarrow{
+    &:before{
+      content: "\f053";
+      padding: 0 3px 0 0;
+    }
+  }
+  &.tp-rightarrow{
+    &:before{
+      content: "\f054";
+      padding: 0 0 0 3px;
+    }
+  }
+  &:before{
+    @include fa();
+    font-size: 19px;
+    line-height: 40px;
+    color: #bac1c6;
+  }
+}
+
+body{
+  div.tp-bullets, .tp-bullets.hesperiden{
+    .tp-bullet{
+      width: 4px !important;
+      height: 4px !important;
+      background: $stm_secondary_color !important;
+      box-sizing: content-box !important;
+      margin: 2px !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 50% !important;
+      @include border-radius(50%);
+      &.selected{
+        background: $stm_base_color !important;
+        padding: 2px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+}

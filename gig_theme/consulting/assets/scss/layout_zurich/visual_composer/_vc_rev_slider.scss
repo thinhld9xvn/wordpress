@@ -1,0 +1,125 @@
+.consulting-rev-title{
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.consulting-rev-title-2{
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #222222 !important;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-3{
+  font-size: 45px !important;
+  line-height: 45px !important;
+  color: #222222 !important;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-icon{
+  font-size: 72px;
+  color: $stm_secondary_color;
+  padding-left: 1px;
+}
+
+.consulting-rev-text{
+  font-weight: 400 !important;
+  font-family: "Roboto Slab", sans-serif;
+  color: #fff !important;
+  line-height: 32px !important;
+  font-size: 24px !important;
+  letter-spacing: -0.02em !important;
+}
+
+.consulting-rev-text-2{
+  color: #222222 !important;
+  line-height: 22px !important;
+  font-size: 14px !important;
+}
+
+.tp-caption{
+  .button{
+    transition: all .3s ease !important;
+    padding: 8px 39px 10px 18px !important;
+    margin-right: 16px;
+    text-transform: none;
+    border-radius: 4px;
+    i {
+      transition: all .3s ease !important;
+    }
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+
+// Blue - Overlay
+.baseColorOverlay.tp-caption {
+  background: rgba( $stm_base_color, .5 ) !important;
+}
+
+body .tparrows{
+  width: 45px !important;
+  height: 45px !important;
+  background: none !important;
+  border: 3px solid #bac1c6 !important;
+  border-radius: 0 !important;
+  @include transition();
+  &:hover{
+    background: $stm_base_color;
+    border-color: $stm_base_color;
+    &:before{
+      color: #fff !important;
+    }
+  }
+  &.tp-leftarrow{
+    &:before{
+      content: "\f053" !important;
+      padding: 0 3px 0 0 !important;
+    }
+  }
+  &.tp-rightarrow{
+    &:before{
+      content: "\f054" !important;
+      padding: 0 0 0 3px !important;
+    }
+  }
+  &:before{
+    @include fa();
+    font-size: 19px !important;
+    line-height: 40px !important;
+    color: #bac1c6 !important;
+    font-family: 'FontAwesome' !important;
+  }
+}
+
+body{
+  div.tp-bullets, .tp-bullets.hesperiden{
+    .tp-bullet{
+      width: 4px !important;
+      height: 4px !important;
+      background: $stm_secondary_color !important;
+      box-sizing: content-box !important;
+      margin: 2px !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 50% !important;
+      @include border-radius(50%);
+      &.selected{
+        background: $stm_base_color !important;
+        padding: 2px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+}

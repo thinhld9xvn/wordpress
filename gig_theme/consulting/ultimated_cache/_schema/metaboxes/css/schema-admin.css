@@ -1,0 +1,7 @@
+.ult-schema-container .box-input {
+  margin-top:  10px;
+}
+
+.ult-schema-container input[type=text] {
+  width: 100%;
+}

@@ -1,0 +1,114 @@
+.consulting-rev-title{
+  font-size: 60px !important;
+  line-height: 60px !important;
+  color: #222222 !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-2{
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #222222 !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-3{
+  font-size: 30px !important;
+  line-height: 30px !important;
+  color: $stm_base_color !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.consulting-rev-title-icon{
+  font-size: 72px;
+  color: $stm_secondary_color;
+  padding-left: 1px;
+}
+
+.consulting-rev-text{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300 !important;
+  color: #222222 !important;
+  line-height: 32px !important;
+  font-size: 24px !important;
+  letter-spacing: -0.02em !important;
+}
+
+.consulting-rev-text-2{
+  color: #222222 !important;
+  line-height: 22px !important;
+  font-size: 14px !important;
+}
+
+.tp-caption{
+  .button{
+    transition: all .3s ease !important;
+    margin-right: 16px;
+  }
+}
+
+body .tparrows{
+  width: 45px !important;
+  height: 45px !important;
+  background: none !important;
+  border: 3px solid #bac1c6 !important;
+  border-radius: 0 !important;
+  @include transition();
+  &:hover{
+    background: $stm_base_color !important;
+    border-color: $stm_base_color !important;
+    &:before{
+      color: #fff !important;
+    }
+  }
+  &.tp-leftarrow{
+    &:before{
+      content: "\f053" !important;
+      padding: 1px 3px 0 0 !important;
+    }
+  }
+  &.tp-rightarrow{
+    &:before{
+      content: "\f054" !important;
+      padding: 1px 0 0 3px !important;
+    }
+  }
+  &:before{
+    @include fa();
+    font-size: 19px !important;
+    line-height: 40px !important;
+    color: #bac1c6 !important;
+    font-family: 'FontAwesome' !important;
+  }
+}
+
+body{
+  div.tp-bullets, .tp-bullets.hesperiden{
+    .tp-bullet{
+      width: 4px !important;
+      height: 4px !important;
+      background: $stm_secondary_color !important;
+      box-sizing: content-box !important;
+      margin: 2px !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 50% !important;
+      @include border-radius(50%);
+      &.selected{
+        background: $stm_base_color !important;
+        padding: 2px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+.substrateWithBorderLeft.tp-caption {
+  border-left: 10px solid $stm_secondary_color !important;
+}
