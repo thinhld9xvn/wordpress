@@ -1,0 +1,80 @@
+bannerOptions = {
+	banner : {
+
+		name : '',
+		src : ''
+
+	},
+	categories : [
+		{
+			name : 'Blog',
+			id : 16,
+			settings : {
+
+				show : 1,
+				showOnAllPosts : 1,	
+
+			},
+			subjects : [
+				{
+
+					name : 'Marketing',
+					id : 16,
+					settings : {
+
+						show : 1,
+						showOnPosts: 1
+
+					}
+
+				}, 
+				{...},
+				{...}
+			]
+		},
+		{...},
+		{...}
+	]
+}
+
+bannerListsOptions = [
+
+	{
+		name : '',
+		src : '',
+
+		categories : [
+			/* thông tin những danh mục đã được set show = 1 || showOnAllPosts = 1 */
+			{
+				name : 'Blog',
+				id : 16,
+				settings : {
+
+					show : 1,
+					showOnAllPosts : 1,	
+
+				},
+				subjects : [
+					{ /* thông tin những chủ đề đã được set show = 1 || showOnPosts = 1 */
+
+						name : 'Marketing',
+						id : 16,
+						settings : {
+
+							show : 1,
+							showOnPosts: 1
+
+						}
+
+					}, 
+					{...},
+					{...}
+				]
+			},
+			{...},
+			{...}
+		]
+
+	}
+
+]
