@@ -1,0 +1,1 @@
+jQuery(function(a){a.when(a.getScript(jspath+"/modules/menu.js"),a.getScript(jspath+"/modules/slider.js"),a.getScript(jspath+"/modules/navig-setequalheight.js"),a.getScript(jspath+"/modules/jtable.js"),a.getScript(jspath+"/modules/fixedObject.js"),a.Deferred(function(b){a(b.resolve)})).done(function(){})});

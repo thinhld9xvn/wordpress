@@ -1,0 +1,1 @@
+jQuery(function(a){a("form").submit(function(b){var c=a("textarea",".pv-contact-form-body").val();a(".pv-contact-form-body-field",".pv-contact-form-body").val(c)})});
