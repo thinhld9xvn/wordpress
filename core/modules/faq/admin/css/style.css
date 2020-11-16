@@ -1,0 +1,435 @@
+.mtop10 {
+    margin-top: 10px;
+}
+
+.padleft20 {
+    padding-left: 20px;
+}
+
+.mleft5 {
+    margin-left: 5px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.faq-containers {
+    padding: 10px;
+}
+
+.faq-containers * {
+    line-height: 1.5em;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+
+.faq-containers-inside {
+
+    margin: auto;
+    display: table;
+
+}
+
+.faq-elements-container {
+    margin-top: 20px;
+}
+
+.faq-element {
+    position: relative;
+    width: 300px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, .1);
+}
+
+.faq-element .inside {
+
+    height: 70px;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+
+    -webkit-box-orient: vertical;
+}
+
+.faq-input:not(:first-child) {
+    margin-top: 10px;
+}
+
+.faq-input label {
+    display: block;
+    font-weight: bold;
+}
+
+.faq-containers select {
+    padding: 5px;
+    max-width: 250px;
+}
+
+.faq-toolbar-container > * {
+
+    float: left;
+
+}
+
+.faq-toolbar-container > *:not(:first-child) {
+
+    margin-left: 20px;
+
+}
+
+.faq-containers .searchbox input[type=text] {
+
+    width: 300px;
+    padding: 5px;
+    border-radius: 0;
+
+}
+
+.faq-containers .disabled {
+    pointer-events: none;
+}
+
+.elem-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, .9);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.elem-toolbar .toolbar-container {
+    position: absolute;
+    top: calc(50% - 11px);
+    left: calc(50% - 137px);
+}
+
+.elem-toolbar a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #2700ff;
+    font-weight: bold;
+}
+
+.elem-toolbar a:first-child {
+    margin-left: 0;
+}
+
+.faq-element:hover > .elem-toolbar  {
+
+    opacity: 1;
+    z-index: 10;
+
+}
+
+.modal-title {
+    font-size: 18px;
+}
+
+.faq-ans-toolbar {
+    text-align: right;
+}
+
+.btnUpdate.updating > span.dashicons-before {
+    position: relative;
+    animation: faq-update 2s infinite linear;
+
+}
+
+.ajax_loading .ajax_img {
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAALjAAAC4wGb/RrgAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHJSURBVHja7JZNKERRFMd/NBkTMjNlYzVKPgY1ZWe2Igs2kqIUCzuklLJUVhYkpZTVFGWDhWIaS+Vzx0oiCyULHwuJxOZOva5733vezH02c+r16p5z7v/3bufc88CbjQEXwKt4j+OjzQLfimfOD/EajXj2qTUNMOwAMKrJK88XQK8DQL8UPw/cAs/ADlDvVigMJBTrFcCnRvwLqLTEbili3oBqJ/Em4FEkrAJFkr9DA9BpiWmzOaUVJ4AlKSGsiIkDi8CueDdJ/kkbgCMngKQlOA0EPNRKpw3AupsNmoGeHAv2RAPQ6NeFVQZsW4QvgXb+wWKiZgoGMAFsis6psTpGhDNgUDwjFeM70AKwbFk8A4IGxEc0HXGMYrHVAEBKA/ABsG9ZeAGiBgCmNADXACFRFGsG53kQuFIAdPnZAREx3M6BPWl4Fcz4VRz5S0JI/DSkgcEchGtFn2e7a8ZNUjFwKFVqn8eqv3fxz/jLqhVJaQ8ASU3fHzgllgIPUtKkzRF3A3UKX4MGYMMNfRw4FSALmpgBaeMhl9dvw1+OsUSzHtV8XZUidlpMwVR28uXD4hqAhF99XQLcSOJ3hsa47eWSAZ5EZce8bvQzALnQ0oXh7dX5AAAAAElFTkSuQmCC');
+    animation: q-loading-animation 2s infinite linear;
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+
+
+}
+
+.ajax_loading .ajax_msg {
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+    display: block;
+}
+
+
+.chart { height: 670px; margin: 5px; width: 100%;  }
+.Treant > .node {  }
+.Treant > p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: bold; font-size: 12px; }
+.node-name { font-weight: bold; font-size: 16px;}
+
+.nodeExample1 {
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    width: 200px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.nodeExample1 img {
+    margin-right:  10px;
+}
+
+.faq-containers table {
+    width: 100%;
+}
+
+.faq-containers table th[align=center] {
+    text-align: center;
+}
+
+.faq-containers table th,
+.faq-containers table td {
+    border: 1px solid #ddd;
+    padding: 8px;    
+}
+
+.sortable-ui {
+    border: 1px solid #ddd;
+}
+
+.sortable-ui:not(:first-child) {
+    margin-top: 10px;
+}
+
+.sortable-ui > h2 {
+    border-bottom: 1px solid transparent;
+    padding: 0 8px;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.sortable-ui.show > h2 {
+    border-bottom-color: #ddd;
+}
+
+.sortable-ui > h2:after {
+
+    content: "\f142";    
+    font: normal 20px/1 dashicons;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+
+}
+
+.sortable-ui > h2:before {
+
+    counter-increment: section;
+    content: counter(section) ". ";
+
+}
+
+.sortable-ui .inside {
+
+    height: 0;
+    overflow: hidden;
+      
+
+}
+
+.sortable-ui.show .inside {
+    height: auto;
+}
+
+#createCampaignDialog select {
+    max-width: 100%;
+}
+
+#CreateQListDialog .modal-dialog,
+#QListsDialog .modal-dialog,
+#EditQListDialog .modal-dialog,
+#CampaignsListDialog .modal-dialog,
+#ShowUsersRegInfoDialog .modal-dialog {
+    max-width: 80%;
+}
+
+#CreateCampaignDialog .modal-dialog,
+#EditCampaignDialog .modal-dialog {
+    max-width: 100%;
+}
+
+.qlist-sortable-ui .inside > .faq-questionbox {
+    padding: 10px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.ui-placeholder {
+
+    height: 39px;    
+    border: 1px dashed #ddd;
+
+}
+
+.QListsPanel .sortables-leftpanel .ui-placeholder {
+
+    height: 0;
+    border: none;
+
+}
+
+.QListsPanel {
+    display: table;
+    width: 100%;
+}
+
+.QListsPanel > div {    
+    position: relative;
+}
+
+.QListsPanel > .panel-left {
+
+    border-right: 20px solid #eee;
+    padding-bottom: 80px;
+
+}
+
+.qlists-sortables {
+    counter-reset: section;
+}
+
+.QListsPanel .qlists-sortables.sortables-rightpanel {
+
+    position: absolute;    
+    top: 25px;
+}
+
+.toolbarPanelLeft {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.toolbarPanelLeft > a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+@keyframes faq-update {
+
+    0% {
+       top: 0;
+       left: 0;
+    }
+
+   25% {
+       top: -10px;
+       left: 0;
+    }   
+
+    50% {
+        left: -10px;
+        top: 0;
+    }    
+
+    75% {
+        top: 10px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+        
+}
+
+@-webkit-keyframes faq-update {
+
+    0% {
+       top: 0;
+       left: 0;
+    }
+
+   25% {
+       top: -10px;
+       left: 0;
+    }   
+
+    50% {
+        left: -10px;
+        top: 0;
+    }    
+
+    75% {
+        top: 10px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+        
+}
+
+@media (min-width: 576px) {
+
+    .modal-dialog {
+        max-width: 520px;     
+    }
+
+
+}
+
+@keyframes q-loading-animation {
+  from { 
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes q-loading-animation {
+  from { 
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg);
+  }
+}

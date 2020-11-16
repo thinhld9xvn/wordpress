@@ -1,0 +1,87 @@
+.gig-khaosat {
+
+    display: table;
+    margin: 20px auto;
+
+}
+
+.gig-question * {
+
+    font-size: 12pt !important;
+
+}
+
+.question-text {
+
+    font-weight: bold;
+    font-size: 14pt !important;
+
+}
+
+.question-answers {
+    margin-top: 20px !important;    
+    padding-left: 20px !important;
+}
+
+.question-answers li {
+    padding: 8px !important;
+    list-style: circle inside !important;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,.1) !important;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,.1) !important;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.question-answers li:before {
+    display: none !important;
+}
+
+.question-answers li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.question-answers li.active,
+.question-answers li:hover {
+
+      background-color: #0f7dbe;
+      color: #fff;
+
+       box-shadow: 2px 3px 5px 0px rgba(15, 125, 190, .3);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(15, 125, 190, .3);
+    
+
+}
+
+.gig-ks-success {
+
+    width: 500px;
+    background: #0f7dbe;
+    color: #fff;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 12pt !important;
+
+}
+
+.gig-ks-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #bfdbdc;
+}
+
+.gig-ks-form .input-control {
+    margin-top: 10px;
+}
+
+#btnGigKSSubmit {
+
+    padding: 10px 208px;
+    border-radius: 30px;
+
+}
+
+#frmGigKSForm .form-control {
+    background: #fff !important;
+}
