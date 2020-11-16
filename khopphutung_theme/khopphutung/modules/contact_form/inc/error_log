@@ -1,0 +1,8 @@
+[22-Dec-2016 11:58:01 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[25-Dec-2016 15:39:01 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[05-Jan-2017 21:06:52 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[06-Jan-2017 19:05:10 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[28-Feb-2017 21:34:33 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[01-Mar-2017 16:59:05 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[02-Mar-2017 16:51:58 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
+[19-Mar-2017 01:49:14 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/khocb8d6/public_html/wp-content/themes/khopphutung/modules/contact_form/inc/pvcf_metabox.php on line 524
