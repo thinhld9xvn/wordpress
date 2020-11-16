@@ -1,0 +1,137 @@
+.mtop5 {
+    margin-top: 5px !important;
+}
+
+.mtop10 {
+    margin-top: 10px !important;
+}
+
+.mright10 {
+    margin-right: 10px !important;
+}
+
+.pull-left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.cpointer {
+    cursor: pointer;
+}
+
+.vmiddle {
+    vertical-align: middle !important;
+}
+
+.mb_hidden {
+    display: none !important;
+}
+
+.metabox_field {
+
+    & input[type=text], 
+    & textarea {
+        width: 100%;
+    }
+
+    & input[type=text] {
+        height: 30px;
+        line-height: 30px;
+
+        &.media_field_metabox {
+            width: 50%;
+        }
+    }
+
+}
+
+.thumbnail_media_field_metabox {
+    max-height: 50px;
+    max-width: 50px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.metabox-global-fields-sortables  {    
+
+    & .inside {
+
+        padding: 0 12px 12px;
+
+        margin: 6px 0 0 0;
+
+    }
+
+    & .metabox-collapse-button {
+
+        float: right;
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+    & .metabox-placeholder {
+
+        border: 1px dotted #ccc;
+
+        height: 200px;
+
+        margin: 20px 0 0 0;
+
+    }
+
+    & .metabox-field-postbox-item {
+
+        &.closed .toggle-indicator:before {
+
+            content: "\f140" !important;
+
+        }            
+        
+        & > h2.metabox-handle-title.markup {          
+           color: #fff;
+        }        
+
+        & > h2.metabox-handle-title.markup {
+            background-color: #72944e;            
+        }
+
+        & .metabox-field-postbox-item {
+
+            & > h2.metabox-handle-title.markup {
+                background-color: #4d85ab;            
+            }
+
+            & .metabox-field-postbox-item { 
+
+                & > h2.metabox-handle-title.markup {
+                    background-color: #716b64;            
+                }
+
+            }
+
+        }
+
+    }
+
+    & .metabox-collapse-button:focus,
+    & .metabox-collapse-button:active,
+    & .metabox-collapse-button:visited {
+        
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+
+    }
+
+}
+
+.accordion-template-item {
+    display: none;
+}
