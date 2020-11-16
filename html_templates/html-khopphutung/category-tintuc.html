@@ -1,0 +1,817 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Công ty khớp phụ tùng 24h</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+		
+	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />	
+	<link rel="stylesheet" href="/css/layout.css" type="text/css" />	
+
+	<link rel="stylesheet" href="/style.css" type="text/css" />
+
+	<script type="text/javascript" src="/js/libraries/jquery.min.js"></script>	
+
+	<!-- flexslider -->
+	<link rel="stylesheet" href="/flexslider/style.css" type="text/css" />	
+	<link rel="stylesheet" href="/flexslider/flexslider.css" type="text/css" />	
+	<script type="text/javascript" src="/flexslider/jquery.flexslider-min.js"></script>
+
+	<!-- lightGallery -->
+	<link rel="stylesheet" href="/lightGallery/css/lightgallery.min.css" type="text/css" />	
+	<script type="text/javascript" src="/lightGallery/js/lightgallery-all.min.js"></script>
+
+	<script type="text/javascript" src="/js/libraries/bootstrap.min.js"></script>			
+	<script type="text/javascript" src="/js/modules/main.min.js"></script>
+
+	<script type="text/javascript" src="/js/modules/mod_navig-compactcontent.min.js"></script>
+	<script type="text/javascript" src="/js/modules/mod_searchbox.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- wrapper -->
+	<div id="wrapper">
+		
+		<!-- header -->
+		<header id="header">			
+
+			<!-- hgtop -->
+			<div class="hgtop padtb40-ms">
+
+				<!-- container -->
+				<div class="container">
+
+					<!-- logo -->
+					<div class="logo col-md-3 col-sm-3 col-xs-4">
+
+						<a href="#">
+							<img src="/images/logo.png" alt="logo" />
+						</a>
+
+					</div>
+					<!-- #logo -->
+
+					<!-- head-searchbar -->
+					<div class="head-searchbar col-md-6 col-sm-6 hidden-xs">
+
+						<!-- searchTextBox -->
+						<div class="searchTextBox col-md-7 col-sm-7">
+
+							<input type="text" id="txtKeySearch" class="form-control pvcontrolSearch txtKeySearch borderRadius --notopright --nobottomright" placeholder="Mời nhập từ khóa ..." />
+
+						</div>
+						<!-- #searchTextBox -->
+
+						<!-- searchSelectCat -->
+						<div class="searchSelectCat col-md-5 col-sm-5">
+
+							<!-- slSearchSelectCat -->
+							<select id="slSearchSelectCat" class="form-control pvcontrolSearch slSearchSelectCat inlineblock wauto borderRadius --noall" name="slSearchSelectCat">
+								<option value="_">Mời chọn danh mục</option>
+								<option value="macbook_air_cu">Macbook Air Cũ</option>
+								<option value="macbook_pro_cu">Macbook Pro Cũ</option>
+								<option value="imac">IMac</option>
+								<option value="ipad">IPad</option>
+								<option value="iphone">IPhone</option>
+							</select>
+							<!-- #slSearchSelectCat -->
+
+							<!-- btnSearchSubmit -->
+							<button id="btnSearchSubmit" class="btn btn-success pvcontrolSearch pvSearchButton btnSearchSubmit wauto inlineblock borderRadius --notopleft --nobottomleft" type="submit">
+								<span class="fa fa-search"></span>
+							</button>
+							<!-- #btnSearchSubmit -->
+
+						</div>
+						<!-- #searchSelectCat -->
+
+					</div>
+					<!-- #head-searchbar -->
+
+					<!-- head-contact -->
+					<div class="head-contact col-md-3 col-sm-3 hidden-xs">
+
+						<div class="icon pull-left">
+							<img src="/images/head-phone.png" alt="head-phone" />
+						</div>
+
+						<div class="caption cprimary pull-left padleft10">
+							<p>031 3540440</p>
+							<p class="mtop10">031 3540486</p>
+						</div>
+
+					</div>
+					<!-- #head-contact -->
+
+					<!-- hm-searchbar -->
+					<div class="hm-searchbar hidden-lg hidden-md hidden-sm">
+
+						<!-- btnSearchSubmit -->
+						<a id="btn-hmShowSearchBoxCat" href="#">
+							<span class="fa fa-search-plus"></span>
+						</a>
+						<!-- #btnSearchSubmit -->
+
+						<!-- hmSearchBoxCatContent -->
+						<div class="hmSearchBoxCatContent">						
+
+							<!-- hmclose -->
+							<div id="hmclose">								
+							</div>
+							<!-- #hmclose -->	
+
+							<!-- hmBox -->
+							<div class="hmBox ohidden">
+
+								<!-- searchTextBox -->
+								<div class="searchTextBox">
+
+									<input type="text" id="txtMKeySearch" class="form-control pvcontrolSearch txtKeySearch borderRadius --notopright --nobottomright" placeholder="Mời nhập từ khóa ..." />
+
+								</div>
+								<!-- #searchTextBox -->
+
+								<!-- searchSelectCat -->
+								<div class="searchSelectCat">
+
+									<!-- slMSearchSelectCat -->
+									<select id="slMSearchSelectCat" class="form-control pvcontrolSearch slSearchSelectCat inlineblock borderRadius --noall" name="slSearchSelectCat">
+										<option value="_">Mời chọn danh mục</option>
+										<option value="macbook_air_cu">Macbook Air Cũ</option>
+										<option value="macbook_pro_cu">Macbook Pro Cũ</option>
+										<option value="imac">IMac</option>
+										<option value="ipad">IPad</option>
+										<option value="iphone">IPhone</option>
+									</select>
+									<!-- #slMSearchSelectCat -->
+
+									<!-- btnMSearchSubmit -->
+									<button id="btnMSearchSubmit" class="btn btn-success pvcontrolSearch inlineblock borderRadius --notopleft --nobottomleft tcenter" type="submit">
+										<span class="fa fa-search"></span>
+									</button>
+									<!-- #btnMSearchSubmit -->
+
+								</div>
+								<!-- #searchSelectCat -->
+
+							</div>			
+							<!-- #hmBox -->			
+
+						</div>
+						<!-- #hmSearchBoxCatContent -->
+
+					</div>
+					<!-- #hm-searchbar -->
+
+					<!-- m-menu -->
+					<div class="m-menu hidden-lg hidden-md hidden-sm">
+
+						<div class="m-menuicon tcenter">
+							<span class="fa fa-navicon"></span>							
+						</div>
+
+						<ul class="m-mainmenu">
+
+							<li>
+						    	<a href="#">Giới thiệu</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Dịch vụ</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Tin tức và sự kiện</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Liên hệ</a>
+						    </li>		
+						    
+						</ul>				
+
+					</div>
+					<!-- #m-menu -->
+
+				</div>
+				<!-- #container -->
+
+			</div>
+			<!-- #hgtop -->					
+
+		</header>
+		<!-- #header -->
+
+		<!-- main -->
+		<section id="main">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- mainColLeft -->
+				<div class="mainColLeft col-md-3 col-sm-4 col-xs-12">
+
+					<!-- boxSPCategoryWidg -->
+					<div class="widgbox">
+
+						<!-- boxSPCategory -->
+						<div class="boxSPCategory">
+
+							<h3 class="spWidgCatTitleBox">Danh mục sản phẩm</h3>
+
+							<!-- spWidgCatContentBox -->
+							<div class="spWidgCatContentBox widgContentBox bg_lightgray">
+
+								<ul class="pboxlist --catbox">
+								    <li>
+								    	<a href="#">
+								    		Macbook Air cũ
+								    	</a>
+								    </li>	
+								    <li>
+								    	<a href="#">
+								    		Macbook Pro cũ
+								    	</a>
+								    </li>								   
+								    <li>
+								    	<a href="#">
+								    		Máy tính để bàn
+								    	</a>
+								    </li>	
+								    <li>
+								    	<a href="#">
+								    		Phụ kiện máy tính
+								    	</a>
+								    </li>	
+								    <li>
+								    	<a href="#">
+								    		Thiết bị chơi game
+								    	</a>
+								    </li>									   
+								    <li>
+								    	<a href="#">
+								    		Iphone
+								    	</a>
+								    </li>	
+								     <li>
+								    	<a href="#">
+								    		Ipad
+								    	</a>
+								    </li>	
+								     <li>
+								    	<a href="#">
+								    		IMac
+								    	</a>
+								    </li>	
+								</ul>
+
+							</div>
+							<!-- #spWidgCatContentBox -->
+
+						</div>
+						<!-- #boxSPCategory -->
+
+					</div>			
+					<!-- #boxSPCategoryWidg -->	
+
+					<!-- boxSupportOnlWidg -->
+					<div class="widgbox">
+
+						<!-- widgTitleBox -->
+						<h3 class="widgTitleBox">
+							<span>Hỗ Trợ Khách Hàng</span>
+						</h3>
+						<!-- #widgTitleBox -->
+
+						<!-- widgSupportOnlBox -->
+						<div class="widgSupportOnlBox widgContentBox padlr20">
+
+							<!-- supportCBox -->
+							<div class="supportCBox">
+
+								<ul class="pboxlist --supportonlbox">
+								    <li>
+
+								    	<img src="/images/support-phone.png" alt="support phone" />
+
+								    	<span class="phone">0967.39.5555</span>
+
+								    </li>
+
+									<li>
+
+								    	<img src="/images/support-email.png" alt="support email" />
+
+								    	<span>nguyenthai.sale@gmail.com</span>
+
+								    </li>								    
+								    							   
+								</ul>
+
+							</div>
+							<!-- #supportCBox -->
+
+							<!-- supportCBox -->
+							<div class="supportCBox">
+
+								<ul class="pboxlist --supportonlbox">
+								    <li>
+
+								    	<img src="/images/support-phone.png" alt="support phone" />
+
+								    	<span class="phone">0967.39.5555</span>
+
+								    </li>
+
+									<li>
+
+								    	<img src="/images/support-email.png" alt="support email" />
+
+								    	<span>nguyenthai.sale@gmail.com</span>
+
+								    </li>								    
+								    							   
+								</ul>
+
+							</div>
+							<!-- #supportCBox -->
+
+						</div>
+						<!-- #widgSupportOnlBox -->
+
+					</div>
+					<!-- #boxSupportOnlWidg -->
+
+					<!-- boxFeatureProdWidg -->
+					<div class="widgbox">
+
+						<!-- widgTitleBox -->
+						<h3 class="widgTitleBox">
+							<span>Sản Phẩm Hot</span>
+						</h3>
+						<!-- #widgTitleBox -->	
+
+						<!-- widgFeaturedProdBox -->
+						<div class="widgFeaturedProdBox widgContentBox padlr20">
+
+							<ul class="pboxlist --normalbox --padtb10">
+
+							    <li>
+
+							    	<!-- pthumb -->
+							    	<div class="pthumb tcenter">
+
+							    		<a href="#">
+							    			<img src="/images/sp-thumb-1.png" alt="sp-thumb-1
+							    			" />
+							    		</a>
+
+							    	</div>
+							    	<!-- #pthumb -->
+
+							    	<!-- ptitle -->
+							    	<div class="ptitle mtop10">
+
+							    		<a href="#">
+							    			 Macbook Air 11'' - MJVM2ZP/A
+							    		</a>
+
+							    	</div>
+							    	<!-- #ptitle -->
+
+							    	<!-- pspcode -->
+							    	<div class="pspcode mtop10">
+
+							    		Mã sản phẩm: <strong class="cprimary">NT25648</strong>
+
+							    	</div>
+							    	<!-- #pspcode -->
+
+							    </li>	
+
+							    <li>
+
+							    	<!-- pthumb -->
+							    	<div class="pthumb tcenter">
+
+							    		<a href="#">
+							    			<img src="/images/sp-thumb-1.png" alt="sp-thumb-1
+							    			" />
+							    		</a>
+
+							    	</div>
+							    	<!-- #pthumb -->
+
+							    	<!-- ptitle -->
+							    	<div class="ptitle mtop10">
+
+							    		<a href="#">
+							    			 Macbook Air 11'' - MJVM2ZP/A
+							    		</a>
+
+							    	</div>
+							    	<!-- #ptitle -->
+
+							    	<!-- pspcode -->
+							    	<div class="pspcode mtop10">
+
+							    		Mã sản phẩm: <strong class="cprimary">NT25648</strong>
+
+							    	</div>
+							    	<!-- #pspcode -->
+
+							    </li>	
+
+							</ul>
+
+						</div>			
+						<!-- #widgFeaturedProdBox -->
+
+					</div>
+					<!-- #boxFeatureProdWidg -->
+
+				</div>
+				<!-- #mainColLeft -->
+
+				<!-- mainColRight -->
+				<div class="mainColRight col-md-9 col-sm-8 col-xs-12 mtop20-xs">
+
+					<!-- menu -->
+					<div id="menu" class="lapmenu padleft20 shown-lap">
+
+						<ul>
+						    <li>
+						    	<a href="#">Giới thiệu</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Dịch vụ</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Tin tức và sự kiện</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Liên hệ</a>
+						    </li>						    
+						</ul>
+
+					</div>
+					<!-- #menu -->
+
+					<!-- m-menu -->
+					<div class="lapmenu m-menu shown-mb cushidden-xs">
+
+						<div class="m-menuicon tcenter">
+							<span class="fa fa-navicon"></span>
+							Main Menu
+						</div>
+
+						<ul class="m-mainmenu">
+
+							<li>
+						    	<a href="#">Giới thiệu</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Dịch vụ</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Tin tức và sự kiện</a>
+						    </li>	
+						    <li>
+						    	<a href="#">Liên hệ</a>
+						    </li>		
+						    
+						</ul>				
+
+					</div>
+					<!-- #m-menu -->
+
+					<!-- mColumnContent -->
+					<div class="mColumnContent padleft20-ms">
+
+						<!-- slider -->
+						<div id="slider" class="flexslider mtop20-ms">
+
+							<ul class="slides">
+							    <li>
+							      <img src="/images/slider1.png" alt="slider" />
+							    </li>
+							    <li>
+							      <img src="/images/slider2.png" alt="slider2" />
+							    </li>							   
+							</ul>						
+
+						</div>
+						<!-- #slider -->
+
+						<!-- boxCatListItems -->
+						<div class="boxCatListItems mtop20">
+
+							<!-- widgTitleBox -->
+							<h3 class="widgTitleBox">
+								<span>Tin tức và sự kiện</span>
+							</h3>
+							<!-- #widgTitleBox -->
+
+							<!-- boxShowCatProdWidg -->
+							<div class="boxShowCatProdWidg">
+
+								<ul class="pboxlist --boxShowCatProd --boxShowCatNews" data-navig="compactcontent" data-multiple="true" data-object=".article" data-setcompact=".article_title > a, .article_excerpt" data-numCharOnIpad="50, 50" data-numCharOnMobile="30, 30" data-endShortContent="..., [...]" data-delimiter-css-property="clear" data-delimiter-css-value="both">
+
+									<!-- article -->
+								    <li class="article ohidden">
+
+								    	<!-- article_thumb -->
+								    	<div class="article_thumb pthumb p_relative tcenter col-md-4 col-sm-4 col-xs-4">
+
+								    		<a href="#">
+								    			<img class="w100p" src="/images/tintuc-1.jpg" alt="tintuc-1" />
+								    		</a>								    		
+
+								    	</div>
+								    	<!-- #article_thumb -->
+
+								    	<!-- article_content -->
+								    	<div class="article_content col-md-8 col-sm-8 col-xs-8 padleft20">
+
+									    	<!-- article_title -->
+									    	<h4 class="article_title">
+
+									    		<a href="#" class="block bold" data-originalContent="Biểu tượng ứng dụng hình tròn của Google Pixel là sự đột phá ?">	
+									    			Biểu tượng ứng dụng hình tròn của Google Pixel là sự đột phá ?
+									    		</a>								    	
+
+									    	</h4>
+									    	<!-- #article_title -->	
+
+									    	<!-- article_excerpt -->
+									    	<div class="article_excerpt mtop20" data-originalContent="Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.">
+									    		
+									    		Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.	
+
+									    	</div>
+									    	<!-- #article_excerpt -->	
+
+									    	<div class="article_details mtop20">
+
+									    		<a class="details" href="#">
+									    			Xem thêm
+									    			<span class="fa fa-chevron-right"></span>
+									    		</a>
+
+									    	</div>	
+
+									    </div>	
+									    <!-- #article_content -->    	
+
+								    </li>	
+								    <!-- #article -->    
+
+								    <!-- article -->
+								    <li class="article ohidden">
+
+								    	<!-- article_thumb -->
+								    	<div class="article_thumb pthumb p_relative tcenter col-md-4 col-sm-4 col-xs-4">
+
+								    		<a href="#">
+								    			<img class="w100p" src="/images/tintuc-2.jpg" alt="tintuc-2" />
+								    		</a>								    		
+
+								    	</div>
+								    	<!-- #article_thumb -->
+
+								    	<!-- article_content -->
+								    	<div class="article_content col-md-8 col-sm-8 col-xs-8 padleft20">
+
+									    	<!-- article_title -->
+									    	<h4 class="article_title">
+
+									    		<a href="#" class="block bold" data-originalContent="Google đang chiếm thế thượng phong trong cuộc đua trợ lý ảo AI, vượt mặt cả Apple và Amazon">	
+									    			Google đang chiếm thế thượng phong trong cuộc đua trợ lý ảo AI, vượt mặt cả Apple và Amazon
+									    		</a>								    	
+
+									    	</h4>
+									    	<!-- #article_title -->	
+
+									    	<!-- article_excerpt -->
+									    	<div class="article_excerpt mtop20" data-originalContent="Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.">
+									    		
+									    		So với Siri, trợ lý ảo mà Apple vẫn đang nỗ lực giúp nó hiểu được 2+2 bằng mấy thì Google Now có vẻ như đang đi trước khá xa.
+
+									    	</div>
+									    	<!-- #article_excerpt -->	
+
+									    	<div class="article_details mtop20">
+
+									    		<a class="details" href="#">
+									    			Xem thêm
+									    			<span class="fa fa-chevron-right"></span>
+									    		</a>
+
+									    	</div>	
+
+									    </div>	
+									    <!-- #article_content -->    	
+
+								    </li>	
+								    <!-- #article -->    		
+
+								    <!-- article -->
+								    <li class="article ohidden">
+
+								    	<!-- article_thumb -->
+								    	<div class="article_thumb pthumb p_relative tcenter col-md-4 col-sm-4 col-xs-4">
+
+								    		<a href="#">
+								    			<img class="w100p" src="/images/tintuc-1.jpg" alt="tintuc-1" />
+								    		</a>								    		
+
+								    	</div>
+								    	<!-- #article_thumb -->
+
+								    	<!-- article_content -->
+								    	<div class="article_content col-md-8 col-sm-8 col-xs-8 padleft20">
+
+									    	<!-- article_title -->
+									    	<h4 class="article_title">
+
+									    		<a href="#" class="block bold" data-originalContent="Biểu tượng ứng dụng hình tròn của Google Pixel là sự đột phá ?">	
+									    			Biểu tượng ứng dụng hình tròn của Google Pixel là sự đột phá ?
+									    		</a>								    	
+
+									    	</h4>
+									    	<!-- #article_title -->	
+
+									    	<!-- article_excerpt -->
+									    	<div class="article_excerpt mtop20" data-originalContent="Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.">
+									    		
+									    		Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.	
+
+									    	</div>
+									    	<!-- #article_excerpt -->	
+
+									    	<div class="article_details mtop20">
+
+									    		<a class="details" href="#">
+									    			Xem thêm
+									    			<span class="fa fa-chevron-right"></span>
+									    		</a>
+
+									    	</div>	
+
+									    </div>	
+									    <!-- #article_content -->    	
+
+								    </li>	
+								    <!-- #article -->    
+
+								    <!-- article -->
+								    <li class="article ohidden">
+
+								    	<!-- article_thumb -->
+								    	<div class="article_thumb pthumb p_relative tcenter col-md-4 col-sm-4 col-xs-4">
+
+								    		<a href="#">
+								    			<img class="w100p" src="/images/tintuc-2.jpg" alt="tintuc-2" />
+								    		</a>								    		
+
+								    	</div>
+								    	<!-- #article_thumb -->
+
+								    	<!-- article_content -->
+								    	<div class="article_content col-md-8 col-sm-8 col-xs-8 padleft20">
+
+									    	<!-- article_title -->
+									    	<h4 class="article_title">
+
+									    		<a href="#" class="block bold" data-originalContent="Google đang chiếm thế thượng phong trong cuộc đua trợ lý ảo AI, vượt mặt cả Apple và Amazon">	
+									    			Google đang chiếm thế thượng phong trong cuộc đua trợ lý ảo AI, vượt mặt cả Apple và Amazon
+									    		</a>								    	
+
+									    	</h4>
+									    	<!-- #article_title -->	
+
+									    	<!-- article_excerpt -->
+									    	<div class="article_excerpt mtop20" data-originalContent="Một sự thay đổi rất nhỏ, nhưng nếu để ý kỹ bạn sẽ thấy tất cả các ứng dụng ngoài màn hình chính của Google Pixel đều có hình tròn chứ không phải là hình vuông.">
+									    		
+									    		So với Siri, trợ lý ảo mà Apple vẫn đang nỗ lực giúp nó hiểu được 2+2 bằng mấy thì Google Now có vẻ như đang đi trước khá xa.
+
+									    	</div>
+									    	<!-- #article_excerpt -->	
+
+									    	<div class="article_details mtop20">
+
+									    		<a class="details" href="#">
+									    			Xem thêm
+									    			<span class="fa fa-chevron-right"></span>
+									    		</a>
+
+									    	</div>	
+
+									    </div>	
+									    <!-- #article_content -->    	
+
+								    </li>	
+								    <!-- #article -->    	
+								    		   
+
+								</ul>
+
+							</div>
+							<!-- #boxShowCatProdWidg -->
+
+						</div>
+						<!-- #boxCatListItems -->						
+
+					</div>
+					<!-- #mColumnContent -->
+
+				</div>
+				<!-- #mainColRight -->
+
+			</div>
+			<!-- #container -->
+			
+		</section>
+		<!-- #main -->
+
+		<!-- footer -->
+		<footer id="footer">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- footMainBlock -->
+				<div class="footMainBlock ohidden">
+
+					<!-- footSectBlock -->
+					<div class="footSectBlock col-md-7 col-sm-7 col-xs-12">
+
+						<!-- footSectFeature -->
+						<div class="footSectFeature col-md-4 col-sm-4 col-xs-4">
+
+							<img src="/images/bg_co.png" alt="bg_co" />
+
+						</div>
+						<!-- #footSectFeature -->
+
+						<!-- footSectContent -->
+						<div class="footSectContent col-md-8 col-sm-8 col-xs-8 padleft20">
+
+							<p class="footSectTitle">Fujian Lijia Co., Ltd.</p>
+
+							<p>
+								Business Type:	Manufacturer, Trading Company <br/>
+								Location:	Fujian, China (Mainland) <br/>
+								Main Products:	diesel engine,diesel generator set,diesel engine <br/> 
+								spare part,diesel water pump set <br/>	
+								Total Employees:	Above 1000 People <br/>	
+								Total Annual Revenue:	US$1 Million - US$2.5 Million <br/>	
+								Year Established:	1998 <br/>	
+								Top 3 Markets: <br/>
+								South Asia 8.33% <br/>
+								Southern Europe 8.33% <br/>
+								Northern Europe 8.33% <br/>
+							</p>	
+
+						</div>				
+						<!-- #footSectContent -->
+
+					</div>		
+					<!-- footSectBlock -->
+
+					<!-- footSectBlock -->
+					<div class="footSectBlock col-md-5 col-sm-5 col-xs-12 padleft40-ms mtop20-xs">
+
+						<!-- footSectContent -->
+						<div class="footSectContent">
+
+							<p class="footSectTitle uppercase">Công ty TNHH DV và TM Nguyễn Thái</p>
+
+							<p class="lh2em">
+								Địa chỉ: Số 26 Phan Đình Phùng, Hạ Lý, Hồng Bàng, Hải Phòng <br/>
+								Hotline: 0989 399939 - 0948 399939 <br/>
+								Tel: 031.3615 382 * Fax: 031.3615 382 <br/>
+								Email: nguyenthai.sale@gmail.com <br/>
+								Website: www.nguyenthaivina.com
+							</p>	
+
+						</div>				
+						<!-- #footSectContent -->
+
+					</div>		
+					<!-- footSectBlock -->
+
+				</div>
+				<!-- #footMainBlock -->
+				
+			</div>
+			<!-- #container -->
+			
+		</footer>
+		<!-- #footer -->
+		
+	</div>
+	<!-- #wrapper -->
+
+</body>
+</html>
