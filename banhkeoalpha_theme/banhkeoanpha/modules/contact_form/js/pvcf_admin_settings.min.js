@@ -1,0 +1,1 @@
+jQuery(function(a){function b(){a("#pvcf-settings-modal").modal({escapeClose:!1,clickClose:!1,showClose:!1})}function c(b){b.preventDefault();var c=a(this).closest(".pvcf-modal").find(".pvcf-settings-class").val(),d=a("#pvcf-settings-hidden-class");d.val(c)}a("#pvcf-button-settings").click(b),a("#pvcf-settings-save").click(c)});
