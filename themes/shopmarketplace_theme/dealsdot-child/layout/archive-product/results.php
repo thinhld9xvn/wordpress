@@ -1,0 +1,3 @@
+<?php 
+
+	\Products\ProductPrintQueryListsUtils::print();

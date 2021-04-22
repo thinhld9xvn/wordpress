@@ -1,0 +1,38 @@
+a:4:{s:8:"template";s:8:"dealsdot";s:4:"mods";a:34:{i:0;b:0;s:18:"nav_menu_locations";a:3:{s:9:"main-menu";i:80;s:13:"top-left-menu";i:81;s:14:"top-right-menu";i:82;}s:18:"custom_css_post_id";i:548;s:24:"dealsdot_featured_listem";a:0:{}s:30:"dealsdot_product_slider_widget";a:0:{}s:13:"dealsdot_logo";i:539;s:26:"dealsdot_header_slide_text";a:0:{}s:30:"dealsdot_header_contact_detail";a:0:{}s:31:"dealsdot_footer_featured_listem";a:0:{}s:22:"dealsdot_footer_social";a:7:{i:0;a:2:{s:10:"social_url";s:24:"http://www.facebook.com/";s:11:"social_icon";s:8:"facebook";}i:1;a:2:{s:10:"social_url";s:20:"https://twitter.com/";s:11:"social_icon";s:7:"twitter";}i:2;a:2:{s:10:"social_url";s:18:"http://google.com/";s:11:"social_icon";s:11:"google-plus";}i:3;a:2:{s:10:"social_url";s:37:"https://themeforest.net/user/klbtheme";s:11:"social_icon";s:3:"rss";}i:4;a:2:{s:10:"social_url";s:21:"http://pinterest.com/";s:11:"social_icon";s:9:"pinterest";}i:5;a:2:{s:10:"social_url";s:25:"https://www.linkedin.com/";s:11:"social_icon";s:8:"linkedin";}i:6;a:2:{s:10:"social_url";s:24:"https://www.youtube.com/";s:11:"social_icon";s:7:"youtube";}}s:23:"dealsdot_footer_payment";a:4:{i:0;a:1:{s:13:"payment_image";i:282;}i:1;a:1:{s:13:"payment_image";i:283;}i:2;a:1:{s:13:"payment_image";i:284;}i:3;a:1:{s:13:"payment_image";i:285;}}s:29:"dealsdot_header_search_button";b:1;s:24:"dealsdot_wishlist_button";b:1;s:23:"dealsdot_compare_button";b:1;s:20:"dealsdot_vendor_mail";b:1;s:24:"dealsdot_shop_breadcrumb";b:1;s:20:"dealsdot_footer_text";s:161:"We have our very own fleet of delivery vans. Your order will be packed with care at our warehouse and delivered right to your door by our friendly DealDots team.";s:17:"shop_banner_title";s:8:"BIG SALE";s:20:"shop_banner_subtitle";s:18:"Save up to 49% off";s:19:"shop_banner_content";s:55:"Lorem ipsum dolor sit amet, consectetur adipiscing elit";s:17:"shop_banner_image";i:293;s:23:"shop_banner_button_text";s:8:"Shop Now";s:22:"shop_banner_button_url";s:1:"#";s:34:"dealsdot_testimonial_slider_widget";a:3:{i:0;a:4:{s:29:"testimonialsliderwidget_image";i:299;s:28:"testimonialsliderwidget_name";s:12:"Saraha Smith";s:31:"testimonialsliderwidget_content";s:106:"Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.";s:31:"testimonialsliderwidget_company";s:11:"Datsun & Co";}i:1;a:4:{s:29:"testimonialsliderwidget_image";i:298;s:28:"testimonialsliderwidget_name";s:8:"John Doe";s:31:"testimonialsliderwidget_content";s:106:"Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.";s:31:"testimonialsliderwidget_company";s:8:"KlbTheme";}i:2;a:4:{s:29:"testimonialsliderwidget_image";i:300;s:28:"testimonialsliderwidget_name";s:11:"Stephen Doe";s:31:"testimonialsliderwidget_content";s:106:"Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.";s:31:"testimonialsliderwidget_company";s:14:"Xperia Designs";}}s:20:"dealsdot_header_cart";b:1;s:20:"dealsdot_shop_layout";s:12:"left-sidebar";s:15:"dealsdot_mapapi";s:39:"AIzaSyAir4tXhx3X-wcdZnhe8TLlo9J2m_AKx6w";s:24:"dealsdot_blog_breadcrumb";b:1;s:19:"dealsdot_top_header";b:1;s:19:"dealsdot_main_color";s:7:"#157ed2";s:22:"dealsdot_top_header_bg";s:7:"#0f6cb2";s:22:"dealsdot_cart_bg_color";s:7:"#fdd922";s:24:"dealsdot_cart_font_color";s:7:"#333333";s:21:"dealsdot_second_color";s:7:"#0f6cb2";}s:7:"options";a:21:{s:22:"woocommerce_demo_store";s:2:"no";s:29:"woocommerce_demo_store_notice";s:79:"This is a demo store for testing purposes &mdash; no orders shall be fulfilled.";s:29:"woocommerce_shop_page_display";s:0:"";s:36:"woocommerce_category_archive_display";s:0:"";s:35:"woocommerce_default_catalog_orderby";s:10:"menu_order";s:27:"woocommerce_catalog_columns";i:4;s:24:"woocommerce_catalog_rows";i:4;s:30:"woocommerce_single_image_width";s:3:"600";s:30:"woocommerce_thumbnail_cropping";s:3:"1:1";s:43:"woocommerce_thumbnail_cropping_custom_width";s:1:"4";s:44:"woocommerce_thumbnail_cropping_custom_height";s:1:"3";s:34:"woocommerce_checkout_company_field";s:8:"optional";s:36:"woocommerce_checkout_address_2_field";s:8:"optional";s:32:"woocommerce_checkout_phone_field";s:8:"required";s:46:"woocommerce_checkout_highlight_required_fields";s:3:"yes";s:55:"woocommerce_checkout_terms_and_conditions_checkbox_text";s:44:"I have read and agree to the website [terms]";s:40:"woocommerce_checkout_privacy_policy_text";s:161:"Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our [privacy_policy].";s:26:"wp_page_for_privacy_policy";s:1:"3";s:25:"woocommerce_terms_page_id";s:3:"397";s:9:"site_icon";s:3:"453";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:720:".top-cart-row .dropdown-cart .lnk-cart .items-cart-inner .basket-item-count {
+    background: #ee4054;
+    color: #fff;
+}
+
+.page-id-457 .main-header {
+    height: 200px;
+}
+
+@media (max-width: 768px){
+.page-id-457 .main-header {
+    height: auto;
+}
+}
+
+.vc_row.vc_custom_1576080537321 {
+    margin-top: -118px !important;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+.vc_row.vc_custom_1576080537321 {
+    margin-top: 30px !important;
+}
+}
+
+@media (max-width: 767px){
+.vc_row.vc_custom_1576080537321 {
+    margin-top: 30px !important;
+}
+}
+
+.main-header .top-search-holder .search-area .search-button {
+    background: #fdd922;
+}
+
+.main-header .top-search-holder .search-area .search-button:after {
+    color: #333;
+}";}

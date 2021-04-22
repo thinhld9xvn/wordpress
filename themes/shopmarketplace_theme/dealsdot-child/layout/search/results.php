@@ -1,0 +1,3 @@
+<?php
+
+	\Searchs\SearchPrintQueryResultsUtils::print();

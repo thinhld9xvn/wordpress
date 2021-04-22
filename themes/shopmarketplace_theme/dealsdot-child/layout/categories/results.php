@@ -1,0 +1,3 @@
+<?php 
+
+	\Products\ProductPrintQueryCategoriesListsUtils::print();

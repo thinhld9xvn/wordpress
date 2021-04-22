@@ -1,0 +1,6 @@
+<?php 
+
+	\Stores\StorePrintQueryResultsUtils::print();
+
+	
+
