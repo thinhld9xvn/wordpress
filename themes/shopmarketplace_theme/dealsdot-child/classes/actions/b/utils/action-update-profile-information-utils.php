@@ -59,7 +59,7 @@
                     
                     //echo wp_hash_password($txtAccountNewPass);
 
-                    \Users\UserChangePassword::change($txtAccountNewPass, $user_id);
+                    \Users\UserChangePasswordUtils::change($txtAccountNewPass, $user_id);
 
                 else :
 

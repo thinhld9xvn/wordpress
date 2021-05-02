@@ -1,4 +1,4 @@
-export function getMainCategoryText() {
+export function getMainCategoryText(id) {
 
     const $this = this;
 

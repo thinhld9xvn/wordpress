@@ -2,27 +2,28 @@
 
     namespace Products;
 
-    class ProductGetListsInLoopFilterUtils {  
+    class ProductGetListsInLoopFilterUtils {   
         
-        private static function _get_lists($products_list, $paged, $posts_per_page) {
-           
-            $_products_list = array();
+        public static function __get_lists($products_list, $posts_per_page, $paged) {
+
+            $arr_product_lists = array();
 
             $start = $paged * $posts_per_page - $posts_per_page;
-
             $end = $paged * $posts_per_page - 1;
-                
-            foreach( $products_list as $key => $product ) :
+
+            $commercants_list = \Commercants\CommercantGetListUtils::get();
+
+            foreach ( $products_list as $key => $product ) :
 
                 if ( $key >= $start && $key <= $end ) :
 
-                    $_products_list[] = \Products\ProductGetDataUtils::get($commercants_list, $product);
+                    $arr_product_lists[] = \Products\ProductGetDataUtils::get($commercants_list, $product);
 
-                endif;              
+                endif;
 
             endforeach;
 
-            return $_products_list;
+            return $arr_product_lists;
 
         }
 
@@ -42,17 +43,9 @@
 
             $product_lists = query_posts( $args );
 
-            $posts_per_page = $filter_args['posts_per_page'];
-
-            $paged = $filter_args['paged'];
-
-            $commercants_list = \Commercants\CommercantGetListUtils::get();
-
-            //$_SESSION['commercants_list'] = $commercants_list;
-
             //echo var_dump($product_lists); die();
             
-            $_products_list = array();
+            $arr_product_lists = array();
             $products_data = array();
 
             $distance_args = $filter_args['dis_radius'];
@@ -60,17 +53,18 @@
             $livraison_args = $filter_args['livraisons'] ? $filter_args['livraisons'] : \Stores\STORE_DATA::NO_VALUE;
             $clickandcollect_args = $filter_args['clickandcollect'] ? $filter_args['clickandcollect'] : \Stores\STORE_DATA::NO_VALUE;
 
+            $posts_per_page = $filter_args['posts_per_page'];
+            $paged = $filter_args['paged'];
+
             if ( ! empty( $distance_args ) ) :
 
-                //$commercants_list = \Commercants\CommercantGetListUtils::get();
+                $commercants_list = \Commercants\CommercantGetListUtils::get();
                 $commercants_coords_list = \Commercants\CommercantGetCoordsListUtils::get();
                 
             endif;
-
-            $count = 0;
             
             if ( have_posts() ) :
-               
+
                 while ( have_posts() ) : the_post();
 
                     global $product;		
@@ -89,7 +83,7 @@
                             ! empty( $filter_args['max_price'] ) ) ||*/ 
                             ! empty( $distance_args ) ) :						
 
-                    /* if ( $sale_price >= $filter_args['min_price'] && $sale_price <= $filter_args['max_price'] ) :
+                       /* if ( $sale_price >= $filter_args['min_price'] && $sale_price <= $filter_args['max_price'] ) :
                             
                             $boolValidate = true;
 
@@ -155,20 +149,21 @@
 
                     endif;
 
-                    if ( $boolValidate ) :    
-                        
-                        $_products_list[] = $product;
+                    if ( $boolValidate ) :
 
-                        $count++;
+                        $arr_product_lists[] = $product;
 
-                        //$_products_list[] = \Products\ProductGetDataUtils::get($commercants_list, $product); 
-                       
+                        //$_products_list[] = \Products\ProductGetDataUtils::get($product);                  
 
                     endif;					
 
-                endwhile;                                          
+                endwhile; 
+
+                //echo var_dump($_products_list); die();   
                 
-                if ( count( $_products_list ) > 0 ) : 
+                $products_data = $arr_product_lists;
+                
+                if ( count( $products_data ) > 0 ) : 
                 
                     $sort_by = $filter_args['sort_by'];
                     
@@ -176,7 +171,7 @@
 
                         //print_r( $_products_list ); die();					
 
-                        usort($_products_list, function ($p1, $p2) use($sort_by) {
+                        usort($products_data, function ($p1, $p2) use($sort_by) {
 
                             $price1 = floatval($p1->regular_price);
                             $price2 = floatval($p2->regular_price);
@@ -210,21 +205,17 @@
 
                         });
                     
-                    endif;      
+                    endif;
                     
-                    //print_r($_products_list); die();
-
-                    $products_data = $_products_list;
-
                     if ( ! empty( $args['_s'] ) ) :
 
                         $products_data = ProductSortRevelanceListsInLoopFilterUtils::sort($products_data, $args['_s']);
 
                     endif;
 
-                endif;
-
-                $products_data = self::_get_lists($products_data, $paged, $posts_per_page);  
+                endif;          
+                
+                $arr_results = self::__get_lists($products_data, $posts_per_page, $paged);                
                     
         
             endif; 
@@ -232,12 +223,10 @@
             wp_reset_query();
 
             return array(
-
-                'results' => $products_data,
-                'total' => $count,
+                'data' => $arr_results,
+                'total' => count($products_data),
                 'posts_per_page' => $posts_per_page
-
-            );        
+            );           
 
         }
 

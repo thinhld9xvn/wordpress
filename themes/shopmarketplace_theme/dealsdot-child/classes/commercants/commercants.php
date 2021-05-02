@@ -16,6 +16,8 @@
 
     require_once dirname(__FILE__) . '/b/utils/get/commercant-get-shop-utils.php';
 
+    require_once dirname(__FILE__) . '/b/utils/get/commercant-get-shop-coords-utils.php';
+
     /* set */
 
     require_once dirname(__FILE__) . '/b/utils/set/commercant-set-map-categories-utils.php';
@@ -48,6 +50,8 @@
 
     require_once dirname(__FILE__) . '/b/utils/commercant-append-info-option-utils.php';
 
-    require_once dirname(__FILE__) . '/b/utils/commercant-search-category-utils.php';
+    require_once dirname(__FILE__) . '/b/utils/commercant-edit-info-option-utils.php';
+
+    require_once dirname(__FILE__) . '/b/utils/commercant-edit-coords-option-utils.php';
 
    

@@ -21,7 +21,11 @@
 	<div class="widget-content">
 
 		<div class="filter-box slider-range-price slider-range-two-points">
-
+			<?php 
+				$filter_selected_max_value = 500;
+				$filter_max_value = 500;
+			
+			?>
 			<div id="filter-price-range" 
 				 data-min-value="<?php echo $filter_min_value ?>" 
 				 data-max-value="<?php echo $filter_max_value ?>"

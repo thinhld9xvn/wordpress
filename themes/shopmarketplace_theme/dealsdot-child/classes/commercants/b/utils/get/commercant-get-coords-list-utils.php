@@ -49,8 +49,8 @@
 
                     $data_coords_list[] = array(
 
-                        'lat' => $lat,
-                        'lng' => $lng
+                        \Stores\STORE_DATA_FIELDS::STORE_GEOLOCATION_LAT => $lat,
+                        \Stores\STORE_DATA_FIELDS::STORE_GEOLOCATION_LNG => $lng
                         
                     ); 
 

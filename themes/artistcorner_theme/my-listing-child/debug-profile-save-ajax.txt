@@ -1,0 +1,218 @@
+/* submit form data when post to server */
+    <pre>Array
+(
+    [job_title] => Data Entry Clerk
+    [job_description] => 
+    [current_job_logo] ( 1 logo thì là chuỗi, từ 2 trở lên là mảng) => b64:aHR0cDovL2FydGlzdC1jb3JuZXItZGVtby5pby93cC1jb250ZW50L3VwbG9hZHMvbGlzdGluZy11cGxvYWRzL2xvZ28vMjAyMC8xMi8xNTg1MTI3NzIyLTE0OTcwMDAwNTgtYWxzdHJvbS0xMy5qcGc=
+    [current_job_gallery] => Array ( 1 gallery thì là chuỗi, từ 2 trở lên là mảng)
+        (
+            [0] => b64:aHR0cDovL2FydGlzdC1jb3JuZXItZGVtby5pby93cC1jb250ZW50L3VwbG9hZHMvbGlzdGluZy11cGxvYWRzL2dhbGxlcnkvMjAyMC8xMi9iMndhZTJsMGVxbzZ0bG5zN2dhei0yLmpwZw==
+            [1] => b64:aHR0cDovL2FydGlzdC1jb3JuZXItZGVtby5pby93cC1jb250ZW50L3VwbG9hZHMvbGlzdGluZy11cGxvYWRzL2dhbGxlcnkvMjAyMC8xMi9iZS15b3VyLXByb2Zlc3Npb25hbC1jb250ZW50LXdyaXR0ZXIuanBn
+        )
+
+    [current_upload-pdf] => Array
+        (
+            [0] => b64:aHR0cDovL2FydGlzdC1jb3JuZXItZGVtby5pby93cC1jb250ZW50L3VwbG9hZHMvbGlzdGluZy11cGxvYWRzL3VwbG9hZC1wZGYvMjAyMC8xMi9UaG9uZy1CYW8tUXV5LURpbmgtQ29uZy1UeS0xLnBkZg==
+        )
+
+    [job_email] => test@test.test
+    [job_phone] => +44 20 1324 21
+    [job_website] => http://artist-corner-demo.io
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [network] => Facebook
+                    [url] => https://mylistingtheme.com
+                )
+
+            [1] => Array
+                (
+                    [network] => Twitter
+                    [url] => https://mylistingtheme.com
+                )
+
+            [2] => Array
+                (
+                    [network] => YouTube
+                    [url] => https://mylistingtheme.com
+                )
+
+            [3] => Array
+                (
+                    [network] => Instagram
+                    [url] => https://mylistingtheme.com
+                )
+
+        )
+
+    [job_category] => Array
+        (
+            [0] => 12
+        )
+
+    [job-salary] => Array
+        (
+            [0] => 71
+        )
+
+    [job-qualification] => Array
+        (
+            [0] => 67
+        )
+
+    [job-vacancy-type] => Array
+        (
+            [0] => 61
+        )
+
+    [job_location] => London, UK
+    [job_location__latitude] => 51.5073509
+    [job_location__longitude] => -0.1277583
+    [region] => Array
+        (
+            [0] => 23
+        )
+
+    [job_manager_form] => submit-listing
+    [job_id] => 0
+    [step] => 1
+    [listing_type] => jobs
+    [listing_package] => 401
+)
+
+
+/* get_post_meta all fields in post */
+Array
+(
+    [_case27_listing_type] => Array
+        (
+            [0] => jobs
+        )
+
+    [_job_expires] => Array
+        (
+            [0] => 2087-12-11
+        )
+
+    [_job_duration] => Array
+        (
+            [0] => 
+        )
+
+    [_claimed] => Array
+        (
+            [0] => 0
+        )
+
+    [_featured] => Array
+        (
+            [0] => 1
+        )
+
+    [geolocation_lat] => Array
+        (
+            [0] => 51.676934515117
+        )
+
+    [geolocation_long] => Array
+        (
+            [0] => 0.28487680659651
+        )
+
+    [_job_logo] => Array
+        (
+            [0] => a:1:{i:0;s:74:"http://artist-corner-demo.io/wp-content/uploads/2020/11/3b62958c2fe21f.jpg";}
+        )
+
+    [_upload-pdf] => Array
+        (
+            [0] => a:2:{i:0;s:74:"http://artist-corner-demo.io/wp-content/uploads/2020/11/1531a21bbda920.pdf";i:1;s:74:"http://artist-corner-demo.io/wp-content/uploads/2020/12/1531a21bbda920.pdf";}
+        )
+
+    [_job_email] => Array
+        (
+            [0] => test@test.test
+        )
+
+    [_job_phone] => Array
+        (
+            [0] => +39 14 5214 22
+        )
+
+    [_job_website] => Array
+        (
+            [0] => https://mylistingtheme.com
+        )
+
+    [_links] => Array
+        (
+            [0] => a:4:{i:0;a:2:{s:7:"network";s:8:"Facebook";s:3:"url";s:26:"https://mylistingtheme.com";}i:1;a:2:{s:7:"network";s:7:"Twitter";s:3:"url";s:26:"https://mylistingtheme.com";}i:2;a:2:{s:7:"network";s:9:"Instagram";s:3:"url";s:26:"https://mylistingtheme.com";}i:3;a:2:{s:7:"network";s:7:"YouTube";s:3:"url";s:26:"https://mylistingtheme.com";}}
+        )
+
+    [_job_location] => Array
+        (
+            [0] => Chivers Rd, Stondon Massey, Brentwood, CM15 0LJ, United Kingdom
+        )
+
+    [_case27_review_count] => Array
+        (
+            [0] => 0
+        )
+
+    [_edit_lock] => Array
+        (
+            [0] => 1609325284:2
+        )
+
+    [_edit_last] => Array
+        (
+            [0] => 2
+        )
+
+    [_thumbnail_id] => Array
+        (
+            [0] => 501
+        )
+
+    [_images-and-files] => Array
+        (
+            [0] => 
+        )
+
+    [_job_gallery] => Array
+        (
+            [0] => a:2:{i:0;s:74:"http://artist-corner-demo.io/wp-content/uploads/2020/12/e09dc2ca08097d.jpg";i:1;s:74:"http://artist-corner-demo.io/wp-content/uploads/2020/12/dfae4cd5ce3c54.jpg";}
+        )
+
+    [_contact-information] => Array
+        (
+            [0] => 
+        )
+
+    [_job-details] => Array
+        (
+            [0] => 
+        )
+
+    [_job-location] => Array
+        (
+            [0] => 
+        )
+
+    [job_location__lock_pin] => Array
+        (
+            [0] => 
+        )
+
+    [_other] => Array
+        (
+            [0] => 
+        )
+
+    [_case27_listing_bookmarks] => Array
+        (
+            [0] => a:1:{i:0;i:1;}
+        )
+
+)

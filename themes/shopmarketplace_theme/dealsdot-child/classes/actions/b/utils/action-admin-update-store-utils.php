@@ -11,9 +11,12 @@
             
             $params = \Strings\StringExtractParametersUtils::parse($params);	
 
-            $categoriesList = \Commercants\CommercantGetStoreCategoriesListUtils::get_all();
-    
-            extract($params);	
+            extract($params);
+
+            $categoriesList = \Products\ProductGetCategoriesListUtils::get();
+            $category = \Products\ProductSearchCategoryUtils::search_by_id($slCategoriePrincipale, $categoriesList);            
+
+            $store_brand = $category->name;
             
             $first_name = mb_strtolower( $txtPrenomDuResponsable, 'UTF-8' );
             $last_name = mb_strtolower( $txtNomDuResponsable, 'UTF-8' );
@@ -30,9 +33,8 @@
 
                 $store_shop_name = $txtNomDeIenseigne;
 
-            endif;
-
-            \Commercants\CommercantSearchCategoryUtils::search_by_id();
+            endif;                
+            
     
             $data = array(			
                 \Stores\STORE_DATA_FIELDS::STORE_FIRST_NAME => ucfirst( $first_name ),
@@ -74,10 +76,12 @@
                 \Stores\STORE_DATA_FIELDS::STORE_WEBSITE => $txtSiteWeb,
                 \Stores\STORE_DATA_FIELDS::STORE_ACTION => $action
 
-            );   
+            );  
+            
+            $addr_info = \Strings\StringExtractAddressUtils::parse($txtGmapNearByAutocomplete);
         
     
-           if ( $action === \Stores\STORE_DATA::STORE_NEW_ACTION ) :
+            if ( $action === \Stores\STORE_DATA::STORE_NEW_ACTION ) :
 
                 /*echo "<pre>";
                 print_r($data);*/
@@ -86,9 +90,7 @@
                 
                 //echo var_dump($boolResult);
 
-                if ( $boolResult ) :
-
-                    $addr_info = \Strings\StringExtractAddressUtils::parse($txtGmapNearByAutocomplete);
+                if ( $boolResult ) :                    
 
                     \Commercants\CommercantAppendInfoOptionUtils::append([
 
@@ -97,11 +99,11 @@
                         \DataTables\DT_COMMERCANTS_COLUMNS::ADDRESSE_IDX => $addr_info[\Stores\STORE_DATA_FIELDS::STORE_STREET_ADDRESS],
                         \DataTables\DT_COMMERCANTS_COLUMNS::VILLE_IDX => $txtVille,
                         \DataTables\DT_COMMERCANTS_COLUMNS::TELEPHONE_COMMERCE_IDX => $txtTelephoneCommerce,
-                        \DataTables\DT_COMMERCANTS_COLUMNS::SECTEUR_ACTIVITY_IDX => $slCategoriePrincipale,
+                        \DataTables\DT_COMMERCANTS_COLUMNS::SECTEUR_ACTIVITY_IDX => $store_brand,
                         \DataTables\DT_COMMERCANTS_COLUMNS::CODE_POSTAL_IDX => $txtCodePostal,
                         \DataTables\DT_COMMERCANTS_COLUMNS::EMAIL_COMMERCE_IDX => $txtEmailCommerce1,
                         \DataTables\DT_COMMERCANTS_COLUMNS::PORTABLE_RESPONSABLE_IDX => $txtTelephoneCommerce,
-                        \DataTables\DT_COMMERCANTS_COLUMNS::EMAIL_RESPONSABLE_IDX => $txtPrenomDuResponsable,
+                        \DataTables\DT_COMMERCANTS_COLUMNS::EMAIL_RESPONSABLE_IDX => $txtEmailDuResponsable,
                         \DataTables\DT_COMMERCANTS_COLUMNS::SITE_INTERNET_IDX => $txtSiteWeb,
                         \DataTables\DT_COMMERCANTS_COLUMNS::PAGE_FACEBOOK_IDX => '',
                         \DataTables\DT_COMMERCANTS_COLUMNS::JOURS_OUVERTURE_HIVER_IDX => $txtJoursOuvertureHiver,
@@ -128,7 +130,44 @@
     
             else :
     
-                $uid = $user_id ? (int) $user_id : $current_user->ID;			
+                $uid = $user_id ? (int) $user_id : $current_user->ID;	
+
+                $store_shop_name = \Stores\StoreGetMetaShopNameUtils::get($uid);
+                
+                $result = \Commercants\CommercantEditInfoOptionUtils::edit([
+                    
+                    \DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE => $store_shop_name,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::NUMERO => $addr_info[\Stores\STORE_DATA_FIELDS::STORE_NO_ADDRESS],
+                    \DataTables\DT_COMMERCANTS_COLUMNS::ADDRESSE => $addr_info[\Stores\STORE_DATA_FIELDS::STORE_STREET_ADDRESS],
+                    \DataTables\DT_COMMERCANTS_COLUMNS::VILLE => $txtVille,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::TELEPHONE_COMMERCE => $txtTelephoneCommerce,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::SECTEUR_ACTIVITY => $store_brand,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::CODE_POSTAL => $txtCodePostal,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::EMAIL_COMMERCE => $txtEmailCommerce1,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::PORTABLE_RESPONSABLE => $txtTelephoneCommerce,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::EMAIL_RESPONSABLE => $txtEmailDuResponsable,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::SITE_INTERNET => $txtSiteWeb,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::PAGE_FACEBOOK => '',
+                    \DataTables\DT_COMMERCANTS_COLUMNS::JOURS_OUVERTURE_HIVER => $txtJoursOuvertureHiver,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::HORAIRES_HIVER => $txtHorairesHiver,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::JOURS_FERMETURE_HIVER => $txtJoursFermetureHiver,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::JOURS_OUVERTURE_ETE => $txtJoursOvertureEte,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::HORAIRES_ETE => $txtHorairesEte,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::JOURS_FERMETURE_ETE => $txtJoursFermetureEte,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::PARTICULARITES_HORAIRES => $txtParticularitesHoraires,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::ANNUAIRE => $txtTelDuResponsable,
+                    \DataTables\DT_COMMERCANTS_COLUMNS::MASQUES_RESCUS => '',
+                    \DataTables\DT_COMMERCANTS_COLUMNS::BAIL_SAISONNIER => ''                 
+
+                ]);
+
+                $result = \Commercants\CommercantEditCoordsOptionUtils::edit([
+
+                    \DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE => $store_shop_name,
+                    \Stores\STORE_DATA_FIELDS::STORE_GEOLOCATION_LAT => $coord_latitude,
+                    \Stores\STORE_DATA_FIELDS::STORE_GEOLOCATION_LNG => $coord_longitude
+
+                ]);
     
                 $boolResult = \Users\UserUpdateUtils::update($data, $uid);
                

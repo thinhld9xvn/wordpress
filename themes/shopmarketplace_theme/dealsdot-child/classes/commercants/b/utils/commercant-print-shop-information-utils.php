@@ -4,26 +4,19 @@
 
     class CommercantPrintShopInformationUtils {
 
-        public static function print($commercants_list, $id) {
-           
-            //$shop_item = \Commercants\CommercantSearchShopUtils::search($commercants_list, $shop_name);
+        public static function print($commercants_list, $id) {   
             
-            //echo $shop_name;
+            //print_r($commercants_list);
             
             $messages = \MessageNotification\MessageGetUtils::get_all();
 
-            //extract($messages);           
-
             $shop_data = \Commercants\CommercantGetShopUtils::get_by_id($commercants_list, $id);
-
-            /*echo "<pre>";
-            print_r($shop_data);*/
-           
+          
             $shop_name = $shop_data ? \Strings\StringFormatUtils::format( $shop_data[\DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE], "lowercase" ) : 
                                         '';
 
             $shop_address = $shop_data ? \Strings\StringFormatUtils::format( $shop_data[\DataTables\DT_COMMERCANTS_COLUMNS::ADDRESSE], "lowercase" ) : 
-                                        '';
+                                        '';           
 
             $shop_brand = $shop_data ? \Strings\StringFormatUtils::format( $shop_data[\DataTables\DT_COMMERCANTS_COLUMNS::SECTEUR_ACTIVITY], "lowercase" ) : 
                                         '';
@@ -55,6 +48,8 @@
                 $store_shop_name = \Strings\StringFormatUtils::format( \Stores\StoreGetMetaShopNameUtils::get($store->ID), "lowercase");
                 $store_address = \Strings\StringFormatUtils::format( \Stores\StoreGetMetaAddressUtils::get($store->ID), "lowercase");
                 $store_brand = \Strings\StringFormatUtils::format( \Stores\StoreGetMetaBrandUtils::get($shop_name), "lowercase");
+
+                //echo $store_address;
 
                 if ( $shop_name === $store_shop_name && 
                         $shop_address === $store_address && 

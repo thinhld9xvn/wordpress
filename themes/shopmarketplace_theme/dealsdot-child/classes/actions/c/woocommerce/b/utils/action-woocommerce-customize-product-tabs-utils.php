@@ -15,10 +15,10 @@
             //$tabs['reviews']['title'] = __( 'Avis' );				// Rename the reviews tab
             //$tabs['singleproductmultivendor']['title'] = __( 'Plus de produits' );	// Rename the additional information tab
 
-            $tabs['commercant'] = array();
+            /*$tabs['commercant'] = array();
             $tabs['commercant']['title'] = __('Commercant');
             $tabs['commercant']['priority'] = 20;
-            $tabs['commercant']['callback'] = array('ActionWooCommerceCommercantTabCallbackUtils', 'init');
+            $tabs['commercant']['callback'] = array('ActionWooCommerceCommercantTabCallbackUtils', 'init');*/
 
             $tabs['plus_de_produits'] = array();
             $tabs['plus_de_produits']['title'] = __('Plus de produits');

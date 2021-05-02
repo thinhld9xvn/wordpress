@@ -6,6 +6,8 @@ import { onKeyDown_checkMaxLengthTextEvent } from './handleEvents/onKeyDown_chec
 
 import { onClick_toggleCoordiationsBoxEvent } from './handleEvents/onClick_toggleCoordiationsBoxEvent.js';
 
+import { onClick_chooseMediaStoreImagesEvent } from './handleEvents/onClick_chooseMediaStoreImagesEvent.js';
+
 const $woo = jQuery('.woocommerce-MyAccount-content'),                     
         $form = ($woo.length && $woo.find('.frmAdminStore')) || [],
 
@@ -16,7 +18,9 @@ const $woo = jQuery('.woocommerce-MyAccount-content'),
 
         $select2 = ($form.length && $form.find('.js-select2-dropdown-simple')) || [],
         $slSelectionnezVotreEnseigne = ($select2.length && $select2.filter('#slSelectionnezVotreEnseigne')) || [],
-        $slCategoriePrincipale = ($select2.length && $select2.filter('#slCategoriePrincipale')) || [];
+        $slCategoriePrincipale = ($select2.length && $select2.filter('#slCategoriePrincipale')) || [],
+
+        $galleriesItem = ($form.length && $form.find('.galleries .item')) || [];
 
 $chkCondition.hide();
 
@@ -40,3 +44,6 @@ $slSelectionnezVotreEnseigne.length &&
 
 $slCategoriePrincipale.length && 
     $slCategoriePrincipale.prop('disabled', false);
+
+$galleriesItem.length && 
+    $galleriesItem.click(onClick_chooseMediaStoreImagesEvent);

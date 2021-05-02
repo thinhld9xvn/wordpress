@@ -1,0 +1,16 @@
+window.localDayTimeLine // chỉ tồn tại khi hộp thoại timeline được mở,
+                           biến này lưu trữ "timespan" (ms) ngày được chọn
+
+window.localEventsSaveChanged // chỉ tồn tại khi sửa một event, 
+                                    biến này ghi lại trạng thái đã sửa thành công (true/false),
+                                    và là một trong các yếu tố chỉ thị cho timer render lại events trên calendar hay ko ?
+
+window.localCalendarActiveId // chỉ tồn tại khi sửa một event,
+                                    biến này lưu lại id của event đang sửa trong ngày
+
+window.localPeriodsValidateInSetupSchModal // biến này tồn tại khi modal calendar tạo mới / sửa được mở,
+                                                    biến này lưu trữ kết quả form event hiện tại validate / invalidate ?
+
+window.localCalendarAction // hành động hiện tại là tạo mới event / sửa event ? (new/edit)
+
+window.localCalendarEvents // danh sách events hiện tại đã tạo 

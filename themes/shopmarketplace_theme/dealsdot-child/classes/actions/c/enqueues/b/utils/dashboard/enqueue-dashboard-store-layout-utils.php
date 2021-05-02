@@ -23,10 +23,11 @@
     
             endif;
 
-            if ( is_page_template(\Page_Templates\PAGE_TEMPLATES::PAGE_DASHBOARD_STORE_PUBLISH_PRODUCT_TEMPLATE) ) :
+            if ( is_page_template(\Page_Templates\PAGE_TEMPLATES::PAGE_DASHBOARD_STORE_PUBLISH_PRODUCT_TEMPLATE) || 
+                    is_page_template(\Page_Templates\PAGE_TEMPLATES::PAGE_DASHBOARD_STORE_UPDATE_PRODUCT_TEMPLATE) ) :
 
-                wp_enqueue_script('admin-dashboard-store-publish-product-jquery', 
-                                    get_stylesheet_directory_uri() . '/assets/js/dashboard/stores/publish-product/publish-product.js');  
+                wp_enqueue_script('admin-dashboard-store-products-jquery', 
+                                    get_stylesheet_directory_uri() . '/assets/js/dashboard/stores/products/products.js');  
 
             endif;
           
@@ -36,7 +37,7 @@
         public static function registerModule($tag, $handle, $src) {
 
             // if not your script, do nothing and return original $tag
-            if ( 'admin-dashboard-store-publish-product-jquery' !== $handle && 
+            if ( 'admin-dashboard-store-products-jquery' !== $handle && 
                     'admin-dashboard-store-update-jquery' !== $handle && 
                         'geolocation-gmap-jquery' !== $handle ) :
 

@@ -11,8 +11,8 @@
             $args = array(
 
                 'post_type' => 'product',
-                'orderby' => 'id',
-                'order' => 'ASC',
+                'orderby' => 'rand',
+            //    'order' => 'ASC',
                 'paged' => $paged
             
             ); ?>

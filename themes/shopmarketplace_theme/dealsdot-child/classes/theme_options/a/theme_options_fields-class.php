@@ -75,6 +75,11 @@
         const CHOOSE_A_PRODUCT_CATEGORY_MSG_TITLE = '"Choose a product category in the list" required message';
         const CHOOSE_A_PRODUCT_CATEGORY_MSG_DESCRIPTION = 'Enter a message';
 
+        const AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_ID = 'ajax-default-update-product-success-msg';
+        const AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_TYPE = 'text';
+        const AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_TITLE = '"Javascript ajax update product success" message';
+        const AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_DESCRIPTION = 'Enter a message';
+
         const AJAX_DEFAULT_SUCCESS_MSG_ID = 'ajax-default-success-msg';
         const AJAX_DEFAULT_SUCCESS_MSG_TYPE = 'text';
         const AJAX_DEFAULT_SUCCESS_MSG_TITLE = '"Javascript ajax success" message';

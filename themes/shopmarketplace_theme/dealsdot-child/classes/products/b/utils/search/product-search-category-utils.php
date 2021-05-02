@@ -27,4 +27,16 @@
 
         }
 
+        public static function search_by_id($id, $cat_lists) {
+
+            foreach ($cat_lists as $key => $category) :
+
+                if ( $category->term_id === (int) $id ) return $category;
+
+            endforeach;
+
+            return null;
+
+        }
+
     }

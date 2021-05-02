@@ -2,7 +2,7 @@ import { createLoadingAjax } from '../loading/createLoadingAjaxUtils.js';
 
 import { MAP_SETTINGS, COMMERCANTS_PAGINATION } from '../../constants/constants.js';
 
-import { createBrandItemHTML } from '../brandItem/createBrandItemHTMLUtils.js';
+import { createBrandItemHTML, createBrandItemHTMLByObject } from '../brandItem/createBrandItemHTMLUtils.js';
 
 import { selectBrandItem } from '../brandItem/selectBrandItemUtils.js';
 import { selectBrandNameItem } from '../brandItem/selectBrandNameItemUtils.js';
@@ -24,7 +24,9 @@ export function createBrandsList(dv) {
 
     setTimeout(function() {
 
-        let html = '';
+        let html = '';    
+        
+        const arrResults = [];
 
         coordiates.map((item, i) => {
 
@@ -32,17 +34,35 @@ export function createBrandsList(dv) {
 
                 if (item.coord.distance <= dv) {
 
-                    html += createBrandItemHTML(i);
+                    arrResults.push({
+                        index : i,
+                        data : JSON.parse(JSON.stringify(_brands_lists_info[i]))
+                    });                   
 
                 }
 
             } else {
 
-                html += createBrandItemHTML(i);
+                arrResults.push({
+                    index : i,
+                    data : JSON.parse(JSON.stringify(_brands_lists_info[i]))
+                });            
 
             }
 
         });
+
+        arrResults.sort((a, b) => a.data.enseigne.localeCompare(b.data.enseigne));
+
+        arrResults.forEach(item => {
+
+            html += createBrandItemHTMLByObject(item);
+
+        });
+
+        //arrResults.map()
+
+        //html += createBrandItemHTML(i);
 
         //console.log(html);
 

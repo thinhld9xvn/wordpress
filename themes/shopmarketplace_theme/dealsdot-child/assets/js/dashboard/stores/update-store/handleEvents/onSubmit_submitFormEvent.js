@@ -28,7 +28,7 @@ export function onSubmit_submitFormEvent(e) {
 
         if ( data === 'success' ) {
 
-            alert(MESSAGE_NOTIFICATIONS['ajax-default-success-msg']);
+            alert(MESSAGE_NOTIFICATIONS['ajax-default-update-product-success-msg']);
 
             resetForm($form);
 

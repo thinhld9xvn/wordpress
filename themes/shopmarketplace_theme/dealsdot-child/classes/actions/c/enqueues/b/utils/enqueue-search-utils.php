@@ -10,7 +10,7 @@
 
                 //wp_localize_script( 'commercant-gmap-api-variable', 'gmap_api_key', GMAP_API_KEY );
     
-                wp_enqueue_script('pagination-jquery', get_stylesheet_directory_uri() . '/assets/js/pagination.min.js');
+                //wp_enqueue_script('pagination-jquery', get_stylesheet_directory_uri() . '/assets/js/pagination.min.js');
                 wp_enqueue_script('search-pagination-js', get_stylesheet_directory_uri() . '/assets/js/search-pagination/search-pagination.js');
     
             endif;

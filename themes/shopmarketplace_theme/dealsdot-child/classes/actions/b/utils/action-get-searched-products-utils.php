@@ -7,13 +7,13 @@
 
             $params = $_POST['params'];	
 		
-            $params = \Strings\StringExtractParametersUtils::parse($params);	
-            
-            $posts_per_page = (int) $_POST['posts_per_page'];
-            $paged = $_POST['paged'] ? (int) $_POST['paged'] : 1;
+            $params = \Strings\StringExtractParametersUtils::parse($params);		
 
             extract($params);
 
+            $posts_per_page = (int) $_POST['posts_per_page'];
+            $paged = (int) $_POST['paged'];
+ 
             $filter_args = array();
 
             $args = array(
@@ -25,17 +25,8 @@
             
             ); 
 
-            if ( ! empty( $posts_per_page ) ) :
-
-                $filter_args['posts_per_page'] = $posts_per_page;
-
-            endif;
-            
-            if ( ! empty( $paged ) ) :
-
-                    $filter_args['paged'] = $paged;
-    
-            endif;
+            $filter_args['posts_per_page'] = $posts_per_page;
+            $filter_args['paged'] = $paged;
 
             if ( ! empty( $s ) ) :
 

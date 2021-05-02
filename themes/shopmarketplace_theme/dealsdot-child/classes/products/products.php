@@ -14,6 +14,8 @@
 
     /* */
 
+    require_once dirname(__FILE__) . '/b/utils/get/product-get-categories-list-utils.php';
+
     require_once dirname(__FILE__) . '/b/utils/get/product-get-data-utils.php';
 
     require_once dirname(__FILE__) . '/b/utils/get/product-get-lists-in-loop-filter-utils.php';

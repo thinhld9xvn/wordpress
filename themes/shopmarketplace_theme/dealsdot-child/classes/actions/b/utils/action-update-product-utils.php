@@ -279,7 +279,7 @@
 
                 endif;*/			
 
-                \Users\UserSendEmailUtils::send(array(
+                /*\Users\UserSendEmailUtils::send(array(
                     
                     'store_shop_name' => $shop_name,
                     'store_last_name' => $current_user->data->last_name,
@@ -288,7 +288,7 @@
                     'type' => 'product',
                     'product_url' => get_the_permalink($pid)                    
 
-                ));
+                ));*/
 
                 echo 'success';
 

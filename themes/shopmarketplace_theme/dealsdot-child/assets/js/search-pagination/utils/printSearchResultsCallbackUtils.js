@@ -1,8 +1,8 @@
-export function printSearchResultsCallback(data, pagination) {
+export function printSearchResultsCallback(data) {
 
     let html = '';
 
-    if (data.length > 0) {
+    if (data && data.length > 0) {
 
         data.forEach(product => {
 

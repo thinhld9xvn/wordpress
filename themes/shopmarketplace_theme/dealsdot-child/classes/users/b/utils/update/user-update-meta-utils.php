@@ -7,7 +7,12 @@
         public static function update($data, $user_id) {
 
             extract($data);
-            
+
+            /*echo "<pre>";
+            print_r($data); die();*/
+
+            //echo var_dump($data[\Stores\STORE_DATA_FIELDS::STORE_PICTURES]); die();
+                     
             wp_update_user(array(
 
                 \Users\USER_DATA_FIELDS::ID => $user_id,
@@ -20,21 +25,16 @@
                
             //echo var_dump($store_pictures);
            
-            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_CIVILITY_FIELD, 
-                                        $data[\Stores\STORE_DATA_FIELDS::STORE_CIVILITY]);
-
-            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_MANAGER_PHONE_FIELD, 
-                                        $data[\Stores\STORE_DATA_FIELDS::STORE_MANAGER_PHONE]);   
+            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_CIVILITY_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_CIVILITY]);
+            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_MANAGER_PHONE_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_MANAGER_PHONE]);   
 
             if ( $data[\Stores\STORE_DATA_FIELDS::STORE_SHOP_NAME] ) :
 
-                update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_SHOP_NAME_FIELD, 
-                                            $data[\Stores\STORE_DATA_FIELDS::STORE_SHOP_NAME]); 
+                update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_SHOP_NAME_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_SHOP_NAME]); 
             
             endif;
 
-            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_MAIN_CATEGORY_FIELD, 
-                                        $data[\Stores\STORE_DATA_FIELDS::STORE_MAIN_CATEGORY]);  
+            update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_MAIN_CATEGORY_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_MAIN_CATEGORY]);  
 
             update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_DESCRIPTION_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_DESCRIPTION]);             
 
@@ -56,6 +56,8 @@
             update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_EMAIL_ADDRESS_1_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_EMAIL_ADDRESS_1]); 
             update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_EMAIL_ADDRESS_2_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_EMAIL_ADDRESS_2]); 
             update_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_PHONE_FIELD, $data[\Stores\STORE_DATA_FIELDS::STORE_PHONE]);              
+
+            echo var_dump(get_user_meta( $user_id, \Stores\STORE_FIELDS::STORE_PICTURES_FIELD, true )); die();
 
             /*echo "<pre>";
             print_r($data); die();*/

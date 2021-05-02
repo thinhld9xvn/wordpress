@@ -83,6 +83,8 @@
                                         $user_data->user_url : 
                                         ''; 
             //echo var_dump($civility);        
+
+            //echo var_dump($store_pictures);
         
             $data_commercants_list = \Commercants\CommercantGetListUtils::get();  
             

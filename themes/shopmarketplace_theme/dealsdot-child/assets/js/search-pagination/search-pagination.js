@@ -1,5 +1,4 @@
-import { pageInst, setPageInstance, 
-            $searchPagination, setJquerySearchPagination } from './inits/inits.js';
+import { $searchPagination, setJquerySearchPagination } from './inits/inits.js';
 
 import { onSubmit_submitSearchFormEvent } from './handleEvents/onSubmit_submitSearchFormEvent.js';
 
@@ -11,12 +10,11 @@ const $frmSubmitForm = jQuery('#frmProductsListFilter'),
         $searchPage = jQuery('body.search'),
         $storeDetailsPage = jQuery('body.page-template-page-store-details');
 
-filtered_product_lists.length > 0 && (
+/*filtered_product_lists.length > 0 && (
 
-    setJquerySearchPagination( jQuery('#searchPagination') ),
-    setPageInstance( $searchPagination.pagination(options) )
+    setJquerySearchPagination( jQuery('#searchPagination') )  
 
-);
+);*/
 
 $frmSubmitForm.filter('[data-trigger-submit=false]')
               .submit(onSubmit_submitSearchFormEvent);

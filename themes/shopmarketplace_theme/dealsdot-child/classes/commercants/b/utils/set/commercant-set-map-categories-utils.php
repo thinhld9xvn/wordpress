@@ -37,10 +37,11 @@
     
                         foreach( $cids as $key => $cid ) :
     
-                            $term = get_term_by('id', $cid, 'product_cat');
+                            $term = get_term_by('id', $cid, 'product_cat');						
+                            
     
                             if ( -1 === \Products\ProductSearchCategoryUtils::search( $term, 
-                                                                                      $arrShopListsCInfo[$shop_name] ) ) :						
+                                                                                             $arrShopListsCInfo[$shop_name] ) ) :						
     
                                 $arrShopListsCInfo[$shop_name][] = array(
                                     'id' => $term->term_id,

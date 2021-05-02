@@ -24,6 +24,8 @@
             $data_product_categories_list = get_terms($args); 
             
             $store_shop_name = \Stores\StoreGetMetaShopNameUtils::get($current_user->ID);
+            $_store_shop_name = mb_strtolower(trim($store_shop_name), "UTF-8");
+
             $store_main_category = \Stores\StoreGetMetaMainCategoryUtils::get($current_user->ID);   
     
             $product_data = '';
@@ -38,7 +40,7 @@
     
                 $product_post_data = $product->get_post_data();
                 
-                $product_data = ProductGetDataUtils::get($product);          
+                $product_data = ProductGetDataUtils::get($data_commercants_list, $product);          
             
             endif; 
             
@@ -106,7 +108,7 @@
                                 $shop_name = mb_strtolower( trim( $shop[\DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE] ), 'UTF-8' ); ?>
     
                                 <option value="<?php echo $shop_name ?>"
-                                        <?php selected($store_shop_name, $shop_name) ?>>
+                                        <?php selected($_store_shop_name, $shop_name) ?>>
     
                                     <?php echo trim( $shop[\DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE] ); ?>
     

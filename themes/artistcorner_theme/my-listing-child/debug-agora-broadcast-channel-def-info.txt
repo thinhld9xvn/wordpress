@@ -1,0 +1,56 @@
+channel_video_settings = Array
+(
+    [external-rtmpServerURL] => 
+    [external-streamKey] => 
+    [external-width] => 640
+    [external-height] => 360
+    [external-videoBitrate] => 400
+    [external-videoFramerate] => 15
+    [external-lowLatency] => false
+    [external-audioSampleRate] => 48000
+    [external-audioBitrate] => 48
+    [external-audioChannels] => 1
+    [external-videoGop] => 30
+    [external-videoCodecProfile] => 100
+    [external-backgroundColor] => #efefef
+    [inject-width] => 640
+    [inject-height] => 360
+    [inject-videoBitrate] => 400
+    [inject-videoFramerate] => 15
+    [inject-lowLatency] => false
+    [inject-audioSampleRate] => 48000
+    [inject-audioBitrate] => 48
+    [inject-audioChannels] => 1
+    [inject-videoGop] => 30
+    [inject-videoCodecProfile] => 100
+    [inject-backgroundColor] => #efefef
+)
+
+channel_appearance_settings = Array
+(
+    [splashImageURL] => 
+    [noHostImageURL] => 
+    [watchButtonText] => Watch the Live Stream
+    [watchButtonIcon] => false
+    [activeButtonColor] => #343a40
+    [disabledButtonColor] => #dc3545
+)
+
+channel_recording_settings = Array
+(
+    [vendor] => 1
+    [region] => 1
+    [bucket] => 
+    [accessKey] => 
+    [secretKey] => 
+)
+
+channel_type = Array
+(
+    [0] => broadcast
+)
+
+channel_user_host = Array
+(
+    [0] => 2
+)

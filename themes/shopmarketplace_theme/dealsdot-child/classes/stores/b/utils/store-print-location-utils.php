@@ -17,16 +17,9 @@
                 $commercants_lists = \Commercants\CommercantGetListUtils::get();
                 $commercants_coords_list = \Commercants\CommercantGetCoordsListUtils::get();
 
-                $id = \Strings\StringGetQueryUtils::get('shop_id');
-                
-                //$id = \Commercants\CommercantSearchShopUtils::search_id($commercants_lists, $shop_id);
+                $id = (int) \Strings\StringGetQueryUtils::get('shop_id');                  
 
-                //echo var_dump($id);
-
-                $shop_coords = $commercants_coords_list[$id];
-                //$shop_data = $commercants_lists[$id];  
-
-                //$shop_name = $commercants_lists[$id][\DataTables\DT_COMMERCANTS_COLUMNS::ENSEIGNE];
+                $shop_coords = \Commercants\CommercantGetShopCoordsUtils::get_by_id($commercants_coords_list, $id);
 
                 if ( ! is_null( $shop_coords ) ) : ?>     
 

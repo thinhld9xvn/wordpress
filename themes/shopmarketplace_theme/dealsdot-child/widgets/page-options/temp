@@ -1,0 +1,39 @@
+<div class="inputbox">
+
+				        <label>
+				            Please input excel file url
+				        </label>
+
+				        <input type="url" name="txtExcelFile" readonly="readonly" value="" />
+				        <a href="#" class="button button-primary btnUploadFile">Choose file</a>
+
+				    </div>
+
+				    <div class="inputbox">
+
+				        <label>
+				        	Commercants address lists
+				        </label>
+
+				        <textarea id="txtCommercantsAddrLists" name="txtCommercantsAddrLists" rows="10" readonly="readonly"><?php echo $commercants_list ?></textarea>
+
+				    </div>		  
+
+				    <div class="inputbox">
+
+				        <label>
+				        	Commercants coordiates list
+				        </label>
+
+				        <textarea id="txtCommercantsCoordsLists" name="txtCommercantsCoordsLists" rows="10" readonly="readonly"><?php echo $commercants_coords ?></textarea>
+
+				    </div>		  
+
+					<div class="inputbox foot-navigation">
+
+				   	 	<button type="submit" class="button button-primary" name="btnCommercantsSm">Lấy dữ liệu</button>
+				   	 	<button class="button button-default btnGetCoordiates">
+				   	 		Lấy tọa độ		   	 		
+				   	 	</button>
+
+				    </div>			

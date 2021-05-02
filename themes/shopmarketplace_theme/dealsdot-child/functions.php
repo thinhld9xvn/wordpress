@@ -17,9 +17,9 @@
  * @link https://codex.wordpress.org/Child_Themes
  */
 
-define('THEME_CHILD_DIR', WP_CONTENT_DIR  . '/themes/dealsdot-child');
+define('THEME_CHILD_DIR', strtolower(get_stylesheet_directory()));
     
-define('THEME_CHILD_DIR_URI', str_replace(ABSPATH, "//{$_SERVER['SERVER_NAME']}/", WP_CONTENT_DIR  . '/themes/dealsdot-child'));
+define('THEME_CHILD_DIR_URI', strtolower(get_stylesheet_directory_uri()));
 
 function localize_message_notifications() {
 

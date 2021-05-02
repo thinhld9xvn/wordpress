@@ -2,9 +2,13 @@ import { createAjaxLoading } from '../utils/loader/createAjaxLoadingUtils.js';
 
 import { removeAjaxLoading } from '../utils/loader/removeAjaxLoadingUtils.js';
 
-import { setPageInstance, $searchPagination, pageInst, options } from '../inits/inits.js';
+import { initPagination, selectPage } from '../utils/initPaginationUtils.js';
 
 import { printSearchResultsCallback } from '../utils/printSearchResultsCallbackUtils.js';
+
+import { onClick_selectPaginationItemEvent } from '../handleEvents/onClick_selectPaginationItemEvent.js';
+
+import { $searchPagination, pagInst, setPaginationInstance } from '../inits/inits.js';
 
 export function performSearchAjax(paged = 1) {
 
@@ -16,8 +20,8 @@ export function performSearchAjax(paged = 1) {
 
     fd.append('action', 'sb_unicorn_get_searched_products');
     fd.append('params', $frmSubmitForm.serialize());
-    fd.append('posts_per_page', __PAGINATION.posts_per_page);
     fd.append('paged', paged);
+    fd.append('posts_per_page', __PAGINATION.posts_per_page);
 
     jQuery.ajax({
 
@@ -31,19 +35,29 @@ export function performSearchAjax(paged = 1) {
 
         if (data !== 'error') {
 
-            const total = data['total'],
-                  posts_per_page = __PAGINATION.posts_per_page;   
+            printSearchResultsCallback(data["data"]);
+            
+            if ( pagInst === null ) {
 
-            options.dataSource = window.location.origin + '/jsoncallback=?';
-        
-            options.pageSize = posts_per_page;
-            options.totalNumber = total;  
-            options.pageNumber = paged;
+                initPagination(parseInt(data["total"]),
+                            parseInt(__PAGINATION.posts_per_page),
+                            parseInt(__PAGINATION.posts_per_page),
+                            0,
+                            0,
+                            {
+                                onSelectPaginationItem: onClick_selectPaginationItemEvent
+                            });
 
-            setPageInstance( $searchPagination.pagination(options) );
+                setPaginationInstance(true);
 
-            printSearchResultsCallback(data['results']);          
+            }
 
+            else {
+
+                selectPage(paged);
+
+            }
+            
         }
 
         removeAjaxLoading();

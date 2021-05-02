@@ -8,6 +8,8 @@
 
             $store_shop_name = \Stores\StoreGetMetaShopNameUtils::get($uid);
 
+            $commercants_list = \Commercants\CommercantGetListUtils::get();
+
             $args = array(
 
                 'post_type' => PRODUCT_FIELDS::PRODUCT_POST_TYPE,
@@ -29,7 +31,7 @@
 
                     global $product;
 
-                    $data = ProductGetDataUtils::get($product);
+                    $data = ProductGetDataUtils::get($commercants_list, $product);
 
                     $product_lists_data[] = $data;
 

@@ -8,6 +8,8 @@ export function onSubmit_onSubmitPersonalInfoEvent(e) {
 
     e.preventDefault();
 
+    const $form = jQuery('#frmPersonalInfo');
+
     if ( ! validatePassword() ) {
 
         alert(MESSAGE_NOTIFICATIONS['enter-required-fields-msg']);
@@ -34,6 +36,8 @@ export function onSubmit_onSubmitPersonalInfoEvent(e) {
         if (data === 'success') {
 
             alert(MESSAGE_NOTIFICATIONS['ajax-default-success-msg']);
+
+            $form[0].reset();
 
         } else {
 

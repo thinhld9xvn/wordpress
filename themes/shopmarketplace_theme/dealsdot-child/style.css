@@ -1722,6 +1722,10 @@ body.woocommerce-js.tinvwl-theme-style .social-buttons {
     font-size: 18px;
 }
 
+body.page-template-admin-store-update-product #frmUpdateProduct #btnResetPPForm {
+    display: none !important;
+}
+
 @media (max-width: 1350px) {
     .col-wrap.shop-contacts {
         padding-top: 20px !important;

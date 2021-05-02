@@ -37,6 +37,9 @@
                 \Theme_Options\THEME_OPTIONS_FIELDS::CHOOSE_A_PRODUCT_CATEGORY_MSG_ID => \Theme_Options\Theme_Options::get_field(\Theme_Options\THEME_OPTIONS_FIELDS::CHOOSE_A_PRODUCT_CATEGORY_MSG_ID,
                                                                                                         \Theme_Options\THEME_OPTIONS_FIELDS::MESSAGE_NOTIFICATION_SECTION_ID),
 
+                \Theme_Options\THEME_OPTIONS_FIELDS::AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_ID => \Theme_Options\Theme_Options::get_field(\Theme_Options\THEME_OPTIONS_FIELDS::AJAX_DEFAULT_UPDATE_PRODUCT_SUCCESS_MSG_ID,
+                                                                                                                            \Theme_Options\THEME_OPTIONS_FIELDS::MESSAGE_NOTIFICATION_SECTION_ID),
+
                 \Theme_Options\THEME_OPTIONS_FIELDS::AJAX_DEFAULT_SUCCESS_MSG_ID => \Theme_Options\Theme_Options::get_field(\Theme_Options\THEME_OPTIONS_FIELDS::AJAX_DEFAULT_SUCCESS_MSG_ID,
                                                                                                                             \Theme_Options\THEME_OPTIONS_FIELDS::MESSAGE_NOTIFICATION_SECTION_ID),
 
