@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dự án phân bón hữu cơ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">     
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/css/dist/layout.css" rel="stylesheet">        
+        <link href="/css/dist/style.css" rel="stylesheet">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>      
+        <!-- bxslider -->
+        <link rel="stylesheet" href="/bxslider/jquery.bxslider.min.css" type="text/css" />
+        <script type="text/javascript" src="/bxslider/jquery.bxslider.min.js"></script>
+        <!-- #bxslider -->
+
+        <!-- lightGallery -->
+        <link rel="stylesheet" href="/lightGallery/css/lightgallery.min.css" type="text/css" />
+        <script type="text/javascript" src="/lightGallery/js/lightgallery-all.min.js"></script>
+        <!-- #lightGallery -->
+
+        <!-- master-modal -->
+        <link rel="stylesheet" href="/jquery.master-modal/jquery.modal.min.css" type="text/css" />
+        <script type="text/javascript" src="/jquery.master-modal/jquery.modal.min.js"></script>	
+        
+        <!-- #master-modal -->
+
+        <script type="module" src="/js/jquery.customize.js"></script>	
+
+      
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="header-wrapper flex-layout flex-justify-space-between">
+                    <div class="header-left">
+                        <div id="logo">
+                            <a href="#">
+                                <img src="/images/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right flex-layout flex-justify-space-between">
+                        <div id="menu">
+                            <ul class="flex-layout flex-justify-space-between">
+                                <li>
+                                    <a href="/index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="mega">
+                                    <a href="#">Đây là Anfa</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="#">Đây là Anfa <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/so-luoc-ve-anfa-page.html">
+                                                            Sơ lược về Anfa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dao-duc-va-tuan-thu-page.html">
+                                                            Đạo đức và tuân thủ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mega">
+                                    <a href="/san-pham-page.html">Sản phẩm</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/san-pham-page.html">Sản phẩm <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng vô cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                       <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng sinh học
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/tin-tuc-page.html">Tin tức</a>
+                                </li>
+                                <li class="mega">
+                                    <a href="/kien-thuc-page.html">Kiến thức</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/kien-thuc-page.html">Kiến thức <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây lương thực
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây rau màu
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                                    </li>                                                   
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="/lien-he-page.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <nav class="flex-layout flex-align-center flex-justify-center">
+                                <button>
+                                    <span class="fa fa-navicon"></span>
+                                </button>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là Anfa</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Sơ lược về Anfa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                            </li>                                                    
+                                            <li>
+                                                <a href="#">
+                                                    Đạo đức và tuân thủ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                            </li>
+                                            <li>
+                                                <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham-page.html">Sản phẩm</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng vô cơ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                            </li>
+                                            <li>
+                                               <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng sinh học
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/tin-tuc-page.html">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="/kien-thuc-page.html">Kiến thức</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Cây lương thực
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Cây rau màu
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lien-he-page.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                            
+                        </div>                        
+                        <div id="anfa-navigation" class="header-anfa-navigation flex-layout flex-align-end">
+                            <a class="search" href="#" aria-label="search"></a>
+                        
+                            <div class="searchbar">
+                                <form method="get" action="http://html-duanphanbon.io/tim-kiem-page.html">
+                                    <input id="s" type="text" name="s" placeholder="Tìm kiếm ..." value="" />
+                        
+                                    <button aria-label="search" type="submit"></button>
+                                </form>
+                            </div>
+                        
+                            <a class="carts" href="/gio-hang-thanh-toan-ck-page.html" aria-label="carts"></a>
+
+                            <div class="cartsListDropDown">
+                                <div class="wrapper">
+                                    <ul>
+                                        <li class="cart flex-layout flex-justify-space-between">
+                                            <div class="thumbnail">
+                                                <img src="/images/bg-product.png" alt="" />
+                                            </div>
+                                            <div class="contents">
+                                                <h4>
+                                                    <a href="#">SOPER G <span>x 1</span></a>
+                                                </h4>
+                                                <div class="price">450.000 đ</div>
+                                            </div>
+                                            <a class="remove" href="#"></a>
+                                        </li>
+                                        <li class="cart flex-layout flex-justify-space-between">
+                                            <div class="thumbnail">
+                                                <img src="/images/bg-product.png" alt="" />
+                                            </div>
+                                            <div class="contents">
+                                                <h4>
+                                                    <a href="#">SOPER G <span>x 1</span></a>
+                                                </h4>
+                                                <div class="price">450.000 đ</div>
+                                            </div>
+                                            <a class="remove" href="#"></a>
+                                        </li>
+                                    </ul>
+                                    <div class="checkout">
+                                        <div class="flex-layout flex-justify-space-between">
+                                            <label>Tổng</label>
+                                            <div class="price">900.000 đ</div>
+                                        </div>
+                                        <div class="sm-checkout">
+                                            <a class="btnCheckout" href="/gio-hang-dat-hang-thanh-cong.html">Thanh toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div id="multilang" class="header-multilang flex-layout">
+                            <a class="active" href="#">VN</a>
+                            <a href="#">EN</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <div class="anfa-home-banner anfa-page-banner" style="background-image: url('/images/carts-bg.png');">
+                <div class="container">
+                    <div class="wrapper flex-layout flex-align-center">
+                        <div class="anfa-box-timing">
+                            <h2>Giỏ hàng</h2>
+                            <p>Trở thành một phần của mạng lưới toàn cầu hợp tác để giải quyết một số thách thức lớn nhất của thế giới một cách có trách nhiệm và có lợi - khan hiếm tài nguyên, mất an ninh lương thực và thay đổi môi trường.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="page-breadcrumb flex-layout flex-align-center">
+                <div class="container">
+                    <a href="#">Trang chủ</a>
+                    <span class="delimiter">/</span>
+                    <span>Giỏ hàng</span>
+                </div>
+            </div>
+        
+            <div class="page-contents page-anfa-main">
+                <div class="page-wrapper">
+                    <div class="container">
+                        <table id="tblCarts" class="table-default table-carts">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>SẢN PHẨM</th>
+                                    <th>GIÁ THÀNH</th>
+                                    <th>SỐ LƯỢNG</th>
+                                    <th>THÀNH TIỀN</th>            
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>                                
+                                <tr>
+                                    <td>1</td>
+                                    <td class="col-product"><img src="/images/bg-product.png" alt="" /> <span class="caption">Sofer 1</span></td>
+                                    <td>450.000 đ</td>
+                                    <td><input type="number" class="form-field txtQty" step="1" min="1" value="1" /></td>
+                                    <td>450.000 đ</td>
+            
+                                    <td><a class="btnRemoveCart" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="col-product"><img src="/images/bg-product.png" alt="" /> <span class="caption">Sofer 1</span></td>
+                                    <td>450.000 đ</td>
+                                    <td><input type="number" class="form-field txtQty" step="1" min="1" value="1" /></td>
+                                    <td>450.000 đ</td>
+            
+                                    <td><a class="btnRemoveCart" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-total" colspan="6">Tổng đơn hàng: <span class="total">900.000 đ</span></td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+
+                        <div class="checkout-section">
+
+                            <div class="grid-two-columns grid-checkout-section">
+
+                                <div class="panel">
+                                    <h4>THÔNG TIN ĐẶT HÀNG</h4>
+                                    <div class="contact-layout">
+                                        <form id="frmOrder" class="frmOrder contact-form default-form" method="post" action="">
+                                            <legend>
+                                                <div class="field">
+                                                    <input type="text" name="txtHovaTen" class="form-field" value="" placeholder="Họ và tên" />
+                                                </div>
+                        
+                                                <div class="field">
+                                                    <input type="text" name="txtSoDienThoai" class="form-field" value="" placeholder="Số điện thoại" />
+                                                </div>
+                                                <div class="field">
+                                                    <input type="text" name="txtDiaChi" class="form-field" value="" placeholder="Địa chỉ" />
+                                                </div>
+                                                <div class="field">
+                                                    <textarea name="txtDescription" class="form-field" placeholder="Lời nhắn"></textarea>
+                                                </div>
+                                                <div class="sm flex-layout flex-justify-space-between">
+                                                    <a class="btnContinueBuying __primary" href="#">Tiếp tục mua hàng</a>
+                                                    <a class="btnCheckout" href="/gio-hang-dat-hang-thanh-cong.html">Thanh toán</a>
+                                                </div>                                                
+                                                
+                                            </legend>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="panel">
+
+                                    <h4>HÌNH THỨC THANH TOÁN</h4>
+
+                                    <div class="cashout-tablists"
+                                        data-navig="tabsList"
+                                        data-tlist="#cashoutTlist"
+                                        data-tcontent="#cashoutTContents">
+
+                                        <ul id="cashoutTlist" class="flex-layout flex-justify-space-between">
+                                            <li  data-target="#cashoutTab1">
+                                                Chuyển khoản Ngân hàng
+                                            </li>
+                                            <li data-target="#cashoutTab2">
+                                                Thanh toán khi nhận hàng
+                                            </li>
+                                        </ul>
+
+                                        <div id="cashoutTContents" class="singleTabContent noborder cashoutTabContent">
+
+                                            <div id="cashoutTab1">
+                                                
+                                                <div class="tabContentHeading logoBanksList flex-layout flex-justify-space-between">
+                                                    <a class="flex-layout flex-align-center active" href="#">
+                                                        <img src="/images/techcombank.png" alt="techcombank" />
+                                                    </a>
+                                                    <a class="flex-layout flex-align-center" href="#">
+                                                        <img src="/images/vietcombank.png" alt="techcombank" />
+                                                    </a>
+                                                    <a class="flex-layout flex-align-center" href="#">
+                                                        <img src="/images/agribank.png" alt="techcombank" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="bank-info">
+                                                    <p><strong>THÔNG TIN TÀI KHOẢN</strong></p>
+                                                    <div class="content">
+                                                        <p>Chủ TK: CÔNG TY TNHH TM VÀ DV GCO 1 <br/>
+                                                           Số TK: 0501000161516 <br/>
+                                                           Chi nhánh: Ngân hàng Vietcombank Chi Nhánh Bắc Sài Gòn
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+
+                                            <div id="cashoutTab2">
+
+                                                <p>Nhân viên của chúng tôi sẽ thu tiền trực tiếp khi giao hàng cho bạn.
+                                                    Vui lòng điền đầy đủ thông tin cá nhân của bạn.</p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div id="mdlOrderSuccess" class="flex-layout anfa-dialog popup flex-align-center flex-justify-center show">
+                            <div class="modal flex-layout flex-direction-column flex-align-center flex-justify-center">
+                                <div class="icon success-icon"></div>
+                                <h2 class="">
+                                    Đặt hàng thành công
+                                </h2>
+                                <p class="">Đơn hàng của quý khách đã đặt hàng thành công. Phân bón Anfa sẽ sớm liên hệ với quý khách để giao hàng. Xin cảm ơn !</p>
+                                <p class=""><a class="btnContinueBuying __primary" href="#">Tiếp tục mua hàng</a></p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>       
+        
+
+        <footer id="colon">
+            <span class="anfa-delimiter-box"></span>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="grid-three-columns">
+                            <div class="ft-column">
+                                <h4>Quy tắc ứng xử</h4>
+                                <h2>Liên hệ chúng tôi</h2>
+                                <figure>
+                                    <p>Địa chỉ: Lô 84 mặt bằng 2107, phường Đông Hải, Thành phố Thanh Hóa</p>
+                                    <p>Hotline: <a href="tel:02373755686">0237 3755 686</a></p>
+                                    <p>Email: <a href="mailto:info@phanbonhuunghi.vn">info@phanbonhuunghi.vn</a></p>
+                                </figure>
+                            </div>
+            
+                            <div class="ft-column">
+                                <h4>Nơi chúng tôi hoạt động</h4>
+                                <h2>Điều hướng</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Sơ lược về Anfa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Nghề nghiệp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Cơ quan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Giải pháp dinh dưỡng cây trồng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ft-column">
+                                <h4>Bản đồ</h4>
+                                <h2>Theo chúng tôi</h2>
+                                <div class="ft-social flex-layout flex-justify-space-between">
+                                    <a class="fb" href="#" arial-label="facebook"> </a>
+                                    <a class="twitter" href="#" arial-label="twitter"> </a>
+            
+                                    <a class="linkedin" href="#" arial-label="linkedin"> </a><a class="youtube" href="#" arial-label="youtube"> </a>
+            
+                                    <a class="instagram" href="#" arial-label="instagram"> </a><a class="rss" href="#" arial-label="rss"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <ul class="ft-copyright">
+                            <li>
+                                <a href="#">
+                                    Tài liệu an toàn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Quyền riêng tư và pháp lý</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên hệ chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="#">@2021 Phan bon Anfa</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+
+        <div id="navigation-sidebar">
+            <a class="fb-messenger" href="#">
+            </a>
+            <a class="phone-contact" href="#"></a>
+        </div>
+        
+     
+    </body>
+    
+    
+    
+    
+</html>

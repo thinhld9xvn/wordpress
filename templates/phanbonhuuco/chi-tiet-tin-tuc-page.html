@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dự án phân bón hữu cơ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">     
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/css/dist/layout.css" rel="stylesheet">        
+        <link href="/css/dist/style.css" rel="stylesheet">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>      
+        <!-- bxslider -->
+        <link rel="stylesheet" href="/bxslider/jquery.bxslider.min.css" type="text/css" />
+        <script type="text/javascript" src="/bxslider/jquery.bxslider.min.js"></script>
+        <!-- #bxslider -->
+
+        <!-- lightGallery -->
+        <link rel="stylesheet" href="/lightGallery/css/lightgallery.min.css" type="text/css" />
+        <script type="text/javascript" src="/lightGallery/js/lightgallery-all.min.js"></script>
+        <!-- #lightGallery -->
+
+        <!-- master-modal -->
+        <link rel="stylesheet" href="/jquery.master-modal/jquery.modal.min.css" type="text/css" />
+        <script type="text/javascript" src="/jquery.master-modal/jquery.modal.min.js"></script>	
+        
+        <!-- #master-modal -->
+
+        <script type="module" src="/js/jquery.customize.js"></script>	
+
+      
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="header-wrapper flex-layout flex-justify-space-between">
+                    <div class="header-left">
+                        <div id="logo">
+                            <a href="#">
+                                <img src="/images/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right flex-layout flex-justify-space-between">
+                        <div id="menu">
+                            <ul class="flex-layout flex-justify-space-between">
+                                <li>
+                                    <a href="/index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="mega">
+                                    <a href="#">Đây là Anfa</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="#">Đây là Anfa <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/so-luoc-ve-anfa-page.html">
+                                                            Sơ lược về Anfa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dao-duc-va-tuan-thu-page.html">
+                                                            Đạo đức và tuân thủ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mega">
+                                    <a href="/san-pham-page.html">Sản phẩm</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/san-pham-page.html">Sản phẩm <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng vô cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                       <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng sinh học
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <a href="/tin-tuc-page.html">Tin tức</a>
+                                </li>
+                                <li class="mega">
+                                    <a href="/kien-thuc-page.html">Kiến thức</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/kien-thuc-page.html">Kiến thức <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây lương thực
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây rau màu
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                                    </li>                                                   
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="/lien-he-page.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <nav class="flex-layout flex-align-center flex-justify-center">
+                                <button>
+                                    <span class="fa fa-navicon"></span>
+                                </button>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là Anfa</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Sơ lược về Anfa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                            </li>                                                    
+                                            <li>
+                                                <a href="#">
+                                                    Đạo đức và tuân thủ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                            </li>
+                                            <li>
+                                                <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham-page.html">Sản phẩm</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng vô cơ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                            </li>
+                                            <li>
+                                               <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng sinh học
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/tin-tuc-page.html">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="/kien-thuc-page.html">Kiến thức</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Cây lương thực
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Cây rau màu
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lien-he-page.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                            
+                        </div>                        
+                        <div id="anfa-navigation" class="header-anfa-navigation flex-layout flex-align-end">
+
+                            <a class="search" href="#" aria-label="search"></a>
+
+                            <div class="searchbar">
+
+                                <form method="get" action="http://html-duanphanbon.io/tim-kiem-page.html">
+
+                                    <input id="s" 
+                                            type="text" 
+                                            name="s" 
+                                            placeholder="Tìm kiếm ..." 
+                                            value="" />
+
+                                    <button aria-label="search" type="submit"></button>
+                                    
+                                </form>
+
+                            </div>
+
+                            <a class="carts" href="/gio-hang-thanh-toan-ck-page.html" aria-label="carts"></a>
+
+                        </div>
+                        
+                        <div id="multilang" class="header-multilang flex-layout">
+                            <a class="active" href="#">VN</a>
+                            <a href="#">EN</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <div class="anfa-home-banner anfa-page-banner" style="background-image: url('/images/single-tin-tuc-bg.png');">
+                <div class="container">
+                    <div class="wrapper flex-layout flex-align-center">
+                        <div class="anfa-box-timing">
+                            <h2>Tin tức</h2>
+                            <p>Chúng tôi luôn tìm cách thông báo cho bạn về những gì đang xảy ra ở Anfa. Trong phần này, bạn sẽ tìm thấy tin tức mới nhất, sự kiện chính về Yara, dễ dàng truy cập vào thư viện</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="page-breadcrumb flex-layout flex-align-center">
+                <div class="container">
+                    <a href="#">Trang chủ</a>
+                    <span class="delimiter">/</span>
+                    <a href="#">Tin tức</a>
+                    <span class="delimiter">/</span>
+                    <span>Ngô biến đổi gen ở Việt Nam tăng diện tích 26 lần trong 5 năm</span>
+                    
+                </div>
+            </div>
+        
+            <div class="page-contents page-anfa-main page-single page-single-news">
+
+                <div class="page-wrapper">
+
+                    <div class="container">
+
+                        <h2 class="pageAnfaHeading pageHeading">Ngô biến đổi gen ở Việt Nam tăng diện tích 26 lần trong 5 năm</h2>
+                        
+                        <div class="metadata">
+                            <div class="datecreated">
+                                Ngày đăng: 23/04/2021
+                            </div>
+                        </div>
+
+                        <div class="page-single-contents single-contents">
+                            <p>Diện tích trồng ngô biến đổi gen ở Việt Nam đang có mức tăng trưởng rất nhanh khi năm 2015 chỉ có 3.500 ha nhưng đến năm 2019 đã lên tới 92.000 ha, cao gấp 26 lần so với năm 2015.</p>
+                            <p class="text-center"><img src="/images/single-tin-tuc-thumbnail.png" alt="" /></p>
+                            <p class="text-center"><i>Mô hình trồng ngô biến đổi gen ở Phú Thọ. Ảnh: Bùi Trần</i></p>
+                            <p>
+                                Đó là thông tin được chia sẻ tại hội nghị với chủ đề: Đóng góp của cây trồng công nghệ sinh học trong nông nghiệp tại Việt Nam do T.Ư Hội Nông dân Việt Nam và Tổ chức quốc tế ứng dụng và tiếp thu công nghệ sinh học trong
+                                nông nghiệp (ISAAA) tổ chức chiều 7.4 tại Hà Nội.
+                            </p>
+                            <p>
+                                Tại Việt Nam, cây trồng công nghệ sinh học (biến đổi gen) đã được chính thức được cấp phép canh tác thương mại từ 2014 - 2015 trên cây ngô. Ngô là một trong các cây trồng chính trong cơ cấu sản xuất nông nghiệp và nước
+                                ta cũng là một trong các quốc gia canh tác ngô nhiều nhất trên thế giới.
+                            </p>
+                            <p>
+                                Năm 2019, tổng diện tích canh tác ngô biến đổi gen khoảng 92.000 ha, chiếm khoảng 10% tổng diện tích trồng ngô cả nước. Đáng lưu ý, diện tích ngô biến đổi gen ở Việt Nam có mức tăng trưởng cao. Trong năm 2015, Việt Nam
+                                chỉ có 3.500 ha, chiếm chưa tới 1% tổng diện tích. Nhưng đến nay, diện tích ngô biến đổi gen năm 2019 đã tăng hơn 26 lần, chỉ so sánh riêng giai đoạn 2018 - 2019, diện tích trồng ngô biến đổi gen đã tăng trưởng là 86%.
+                            </p>
+                            <p>
+                                Hiệp hội Thương mại giống cây trồng Việt Nam phối hợp với Viện PG Economics (Anh Quốc) đã tiến hành một nghiên cứu đánh giá và phân tích tác động của cây ngô công nghệ sinh học với các tính trạng chuyển gen kháng sâu và
+                                chống chịu thuốc trừ cỏ sau 5 năm canh tác. Đây cũng là nghiên cứu đầu tiên ở cấp độ nông hộ tại 7 vùng sinh thái tại Việt Nam về cây trồng biến đổi gen.
+                            </p>
+                            <p>Kết quả cho thấy, năng suất thu hoạch được của các giống ngô biến đổi với các tính trạng kháng sâu và chống chịu thuốc trừ cỏ cao hơn so với các giống ngô lai thường từ 15,2 - 30%.</p>
+                            <p>
+                                Lợi nhuận canh tác có được từ việc trồng các giống ngô biến đổi gen cũng gia tăng với mức từ 196 - 330 USD/ ha, tương đương với khoảng 4,5 - 7,6 triệu đồng/ha. Đặc biệt, lượng thuốc bảo vệ thực vật sử dụng khi canh tác
+                                ngô biến đổi gen giảm đáng kể, với thuốc trừ cỏ là 26% và thuốc trừ sâu là 78%.
+                            </p>
+                            <p>
+                                Chia sẻ tại hội thảo, ông Trần Xuân Định, Phó chủ tịch Hội Nông dân Việt Nam, cho biết kết quả nghiên cứu công bố hôm nay củng cố thêm các dữ liệu thực tế chứng minh việc đưa các giống ngô biến đổi gen vào sản xuất là
+                                một quyết định đúng, được xem là công cụ quan trọng giúp nông dân tăng thu nhập. Ngô biến đổi gen góp phần đảm bảo nguồn cung thức ăn chăn nuôi một cách chủ động hơn đồng thời cải thiện vai trò cây ngô trong sản xuất
+                                nông nghiệp Việt Nam.
+                            </p>
+
+                        </div>
+
+                        <div class="fbComments">
+
+                            <div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+
+								<div class="fb-comments" 
+                                    data-href="http://html-duanphanbon.io/chi-tiet-san-pham-page.html"
+                                    data-width="100%" 
+                                    data-numposts="5"></div>
+
+                        </div>
+
+                        <div class="articlesRelatedBox">
+                            <h2 class="pageAnfaHeading pageHeading">Tin tức liên quan</h2>
+                        
+                            <div class="grid-three-columns grid-articles-list grid-articles-list-sp">
+                                <div class="item">
+                                    <article class="__column-grid">
+                                        <div class="thumbnail">
+                                            <a href="/chi-tiet-tin-tuc-page.html">
+                                                <img src="/images/article-related1.png" alt="article" />
+                                            </a>
+                                        </div>
+                                        <div class="contents">
+                                            <h3><a href="/chi-tiet-tin-tuc-page.html">Tiền Giang nỗ lực 'cứu' hơn 15.000 ha lúa, hoa màu, cây ăn trái vùng hạn mặn</a></h3>
+                                            <div class="metadata">
+                                                <div class="datecreated">
+                                                    23/04/2021
+                                                </div>
+                                            </div>
+                                            <div class="description">Sau khi thu hoạch xong 23.000 ha lúa Đông xuân chính vụ, các huyện phía Đông của tỉnh Tiền Giang còn hơn 15.000 ha diện tích lúa Đông Xuân m...</div>
+                                            <div class="readmore flex-layout flex-justify-end">
+                                                <a class="btnReadmore" href="#">
+                                                    Xem thêm
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="item">
+                                    <article class="__column-grid">
+                                        <div class="thumbnail">
+                                            <a href="/chi-tiet-tin-tuc-page.html">
+                                                <img src="/images/article-related2.png" alt="article" />
+                                            </a>
+                                        </div>
+                                        <div class="contents">
+                                            <h3><a href="/chi-tiet-tin-tuc-page.html">Tiền Giang nỗ lực 'cứu' hơn 15.000 ha lúa, hoa màu, cây ăn trái vùng hạn mặn</a></h3>
+                                            <div class="metadata">
+                                                <div class="datecreated">
+                                                    23/04/2021
+                                                </div>
+                                            </div>
+                                            <div class="description">Sau khi thu hoạch xong 23.000 ha lúa Đông xuân chính vụ, các huyện phía Đông của tỉnh Tiền Giang còn hơn 15.000 ha diện tích lúa Đông Xuân m...</div>
+                                            <div class="readmore flex-layout flex-justify-end">
+                                                <a class="btnReadmore" href="#">
+                                                    Xem thêm
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="item">
+                                    <article class="__column-grid">
+                                        <div class="thumbnail">
+                                            <a href="/chi-tiet-tin-tuc-page.html">
+                                                <img src="/images/article-related3.png" alt="article" />
+                                            </a>
+                                        </div>
+                                        <div class="contents">
+                                            <h3><a href="/chi-tiet-tin-tuc-page.html">Tiền Giang nỗ lực 'cứu' hơn 15.000 ha lúa, hoa màu, cây ăn trái vùng hạn mặn</a></h3>
+                                            <div class="metadata">
+                                                <div class="datecreated">
+                                                    23/04/2021
+                                                </div>
+                                            </div>
+                                            <div class="description">Sau khi thu hoạch xong 23.000 ha lúa Đông xuân chính vụ, các huyện phía Đông của tỉnh Tiền Giang còn hơn 15.000 ha diện tích lúa Đông Xuân m...</div>
+                                            <div class="readmore flex-layout flex-justify-end">
+                                                <a class="btnReadmore" href="#">
+                                                    Xem thêm
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <footer id="colon">
+            <span class="anfa-delimiter-box"></span>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="grid-three-columns">
+                            <div class="ft-column">
+                                <h4>Quy tắc ứng xử</h4>
+                                <h2>Liên hệ chúng tôi</h2>
+                                <figure>
+                                    <p>Địa chỉ: Lô 84 mặt bằng 2107, phường Đông Hải, Thành phố Thanh Hóa</p>
+                                    <p>Hotline: <a href="tel:02373755686">0237 3755 686</a></p>
+                                    <p>Email: <a href="mailto:info@phanbonhuunghi.vn">info@phanbonhuunghi.vn</a></p>
+                                </figure>
+                            </div>
+            
+                            <div class="ft-column">
+                                <h4>Nơi chúng tôi hoạt động</h4>
+                                <h2>Điều hướng</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Sơ lược về Anfa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Nghề nghiệp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Cơ quan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Giải pháp dinh dưỡng cây trồng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ft-column">
+                                <h4>Bản đồ</h4>
+                                <h2>Theo chúng tôi</h2>
+                                <div class="ft-social flex-layout flex-justify-space-between">
+                                    <a class="fb" href="#" arial-label="facebook"> </a>
+                                    <a class="twitter" href="#" arial-label="twitter"> </a>
+            
+                                    <a class="linkedin" href="#" arial-label="linkedin"> </a><a class="youtube" href="#" arial-label="youtube"> </a>
+            
+                                    <a class="instagram" href="#" arial-label="instagram"> </a><a class="rss" href="#" arial-label="rss"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <ul class="ft-copyright">
+                            <li>
+                                <a href="#">
+                                    Tài liệu an toàn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Quyền riêng tư và pháp lý</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên hệ chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="#">@2021 Phan bon Anfa</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+
+        <div id="navigation-sidebar">
+            <a class="fb-messenger" href="#">
+            </a>
+            <a class="phone-contact" href="#"></a>
+        </div>
+        
+     
+    </body>
+    
+    
+    
+    
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dự án phân bón hữu cơ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">     
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/css/dist/layout.css" rel="stylesheet">        
+        <link href="/css/dist/style.css" rel="stylesheet">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>      
+        <!-- bxslider -->
+        <link rel="stylesheet" href="/bxslider/jquery.bxslider.min.css" type="text/css" />
+        <script type="text/javascript" src="/bxslider/jquery.bxslider.min.js"></script>
+        <!-- #bxslider -->
+
+        <!-- lightGallery -->
+        <link rel="stylesheet" href="/lightGallery/css/lightgallery.min.css" type="text/css" />
+        <script type="text/javascript" src="/lightGallery/js/lightgallery-all.min.js"></script>
+        <!-- #lightGallery -->
+
+        <!-- master-modal -->
+        <link rel="stylesheet" href="/jquery.master-modal/jquery.modal.min.css" type="text/css" />
+        <script type="text/javascript" src="/jquery.master-modal/jquery.modal.min.js"></script>	
+        
+        <!-- #master-modal -->
+
+        <script type="module" src="/js/jquery.customize.js"></script>	
+
+      
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="header-wrapper flex-layout flex-justify-space-between">
+                    <div class="header-left">
+                        <div id="logo">
+                            <a href="#">
+                                <img src="/images/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right flex-layout flex-justify-space-between">
+                        <div id="menu">
+                            <ul class="flex-layout flex-justify-space-between">
+                                <li>
+                                    <a href="/index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="mega active">
+                                    <a href="#">Đây là Anfa</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="#">Đây là Anfa <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/so-luoc-ve-anfa-page.html">
+                                                            Sơ lược về Anfa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li class="active">
+                                                        <a href="/dao-duc-va-tuan-thu-page.html">
+                                                            Đạo đức và tuân thủ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mega">
+                                    <a href="/san-pham-page.html">Sản phẩm</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/san-pham-page.html">Sản phẩm <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng vô cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                       <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng sinh học
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/tin-tuc-page.html">Tin tức</a>
+                                </li>
+                                <li class="mega">
+                                    <a href="/kien-thuc-page.html">Kiến thức</a>
+                                    <div class="sub-menu">
+                                        <div class="wrapper">
+                                            <h4>
+                                                <a href="/kien-thuc-page.html">Kiến thức <span class="fa fa-angle-right"></span></a>
+                                            </h4>
+                                            <div class="grid-two-columns">
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây lương thực
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                                    </li>
+                                                 
+                                                </ul>
+                                                <ul class="item item-list">
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">
+                                                            Cây rau màu
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                                    </li>                                                   
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="/lien-he-page.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <nav class="flex-layout flex-align-center flex-justify-center">
+                                <button>
+                                    <span class="fa fa-navicon"></span>
+                                </button>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là Anfa</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Sơ lược về Anfa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-menh-tam-nhin-va-gia-tri-page.html">Sứ mệnh, tầm nhìn và giá trị </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-doi-moi-page.html">Sự đổi mới </a>
+                                            </li>
+                                            <li>
+                                                <a href="/su-ben-vung-page.html">Sự bền vững </a>
+                                            </li>                                                    
+                                            <li>
+                                                <a href="#">
+                                                    Đạo đức và tuân thủ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/bao-ve-con-nguoi-va-moi-truong-page.html">Bảo vệ con người và môi trường </a>
+                                            </li>
+                                            <li>
+                                                <a href="/noi-chung-toi-hoat-dong-page.html">Nơi chúng tôi hoạt động </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham-page.html">Sản phẩm</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng vô cơ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hữu cơ
+                                                        </a>
+                                            </li>
+                                            <li>
+                                               <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng cho hoa
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dinh dưỡng sinh học
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng hòa tan
+                                                        </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-san-pham-page.html">
+                                                            Dinh dưỡng khác
+                                                        </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/tin-tuc-page.html">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="/kien-thuc-page.html">Kiến thức</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Cây lương thực
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây ăn quả</a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Cây công nghiệp</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Cây rau màu
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/dmuc-kien-thuc-page.html">Hoa cây cảnh</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/nghe-nghiep-page.html">Nghề nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lien-he-page.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                            
+                        </div>                        
+                        <div id="anfa-navigation" class="header-anfa-navigation flex-layout flex-align-end">
+
+                            <a class="search" href="#" aria-label="search"></a>
+
+                            <div class="searchbar">
+
+                                <form method="get" action="http://html-duanphanbon.io/tim-kiem-page.html">
+
+                                    <input id="s" 
+                                            type="text" 
+                                            name="s" 
+                                            placeholder="Tìm kiếm ..." 
+                                            value="" />
+
+                                    <button aria-label="search" type="submit"></button>
+                                    
+                                </form>
+
+                            </div>
+
+                            <a class="carts" href="/gio-hang-thanh-toan-ck-page.html" aria-label="carts"></a>
+
+                        </div>
+                        
+                        <div id="multilang" class="header-multilang flex-layout">
+                            <a class="active" href="#">VN</a>
+                            <a href="#">EN</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <div class="anfa-home-banner anfa-page-banner" style="background-image: url('/images/su-doi-moi-bg.png');">
+                <div class="container">
+                    <div class="wrapper flex-layout flex-align-center">
+                        <div class="anfa-box-timing">
+                            <h2>Sự đổi mới</h2>
+                            <p>Là công ty phân bón hàng đầu Việt Nam và là nhà cung cấp các giải pháp môi trường, chúng tôi giải quyết những thách thức toàn cầu và tạo ra sự thay đổi tích cực.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="page-breadcrumb flex-layout flex-align-center">
+
+                <div class="container">
+
+                    <a href="#">Trang chủ</a>            
+                    <span class="delimiter">/</span>
+                    <a href="#">Đây là Anfa</a>
+                    <span class="delimiter">/</span>
+                    <span>Sự đổi mới</span>
+
+                </div>
+
+            </div>
+
+            <div class="page-contents page-anfa-main">
+                <div class="page-wrapper">
+                    <div class="grid-anfa-layout">
+                        <div class="container">
+                            <div class="grid-two-columns grid-anfa-layout-bx">
+                                <div class="item">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/x11NA63gLDM"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen=""
+                                    ></iframe>
+                                </div>
+                                <div class="item">
+                                    <h2 class="pageAnfaHeading pageHeading text-center">Đạo đức và tuân thủ</h2>
+                                    <p>
+                                        Chúng tôi hợp tác chặt chẽ với nông dân và khách hàng công nghiệp để cung cấp các giải pháp sáng tạo. Chúng tôi mong muốn khám phá những cách thức mới và mới lạ để giải quyết một số thách thức toàn cầu lớn trong
+                                        thời đại của chúng ta, và sự đổi mới là trọng tâm của con người chúng ta. Xem video dài bốn phút này và tìm hiểu cách thực hiện.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-anfa-layout">
+                        <div class="container">
+                            <div class="grid-two-columns grid-anfa-layout-bx grid-anfa-layout-sp" style="">
+                                <div class="item">
+                                    <h2 class="pageAnfaHeading pageHeading text-center">Không có ai có thể giải quyết những vấn đề lớn nhất của thế giới một mình!</h2>
+                                    <p>Chúng tôi có một cách tiếp cận có cấu trúc để đổi mới dựa trên sự hợp tác với các bên bên ngoài. Điều này cho phép chúng tôi xác định các cơ hội ứng phó với các mối đe dọa hiện đại và các vấn đề toàn cầu.</p>
+                                    <p>Chúng tôi hỗ trợ sinh viên, nhà phát minh trẻ và các ý tưởng ở giai đoạn đầu bằng cách cung cấp cho họ một nền tảng lý tưởng và thưởng cho các giải pháp hứa hẹn nhất.</p>
+                                    <p>Hợp tác với các đối tác và viện nghiên cứu bên ngoài giúp chúng tôi khám phá ra những cách thức sáng tạo và bền vững để thực hiện sứ mệnh và tầm nhìn của mình.</p>
+                                    <p>Các trung tâm Nghiên cứu và Phát triển của Yara làm việc để cải thiện năng lực cốt lõi của chúng tôi và khám phá các giải pháp mới, mang tính đột phá cho doanh nghiệp của chúng tôi và cho xã hội.</p>
+                                </div>
+                                <div class="item">
+                                    <img src="/images/company-bg.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-anfa-layout">
+                        <div class="container">
+                            <h2 class="pageAnfaHeading pageHeading text-center grid-anfa-layout-sp">Cập nhật đổi mới</h2>
+                            <p class="text-center">
+                                Chúng tôi đang làm việc với các đối tác bên trong và bên ngoài để giới thiệu các giải pháp sáng tạo trong ngành của chúng tôi và thực hiện sứ mệnh và tầm nhìn của chúng tôi. Dưới đây là một số phát triển gần đây của
+                                chúng tôi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-anfa-layout __featured-spanning">
+                        <div class="container">
+                            <div class="grid-three-columns grid-anfa-featured-spanning">
+                                <div class="item spanning-item">
+                                    <div class="thumbnail bg-default-settings bg-fullheight" style="background-image: url('/images/updated1.png');"></div>
+                                    <div class="extras">
+                                        <h3 class="title">Anfa và Nel hợp tác sản xuất hydro không cacbon để sản xuất phân bón</h3>
+                                        <p>Trong một thỏa thuận được ký ngày hôm nay, Anfa và Nel xác nhận tham vọng chung của họ trong việc phát triển hydro sạch sẽ cho phép Anfa thực hiện sản xuất phân bón có lượng khí thải cacbon thấp.</p>
+                                    </div>
+                                </div>
+                                <div class="item spanning-item">
+                                    <div class="thumbnail bg-default-settings bg-fullheight" style="background-image: url('/images/updated2.png');"></div>
+                                    <div class="extras">
+                                        <h3 class="title">Anfa và IBM hợp lực để chuyển đổi tương lai của ngành nông nghiệp</h3>
+                                        <p>Trong một thỏa thuận được ký ngày hôm nay, Anfa và Nel xác nhận tham vọng chung của họ trong việc phát triển hydro sạch sẽ cho phép Anfa thực hiện sản xuất phân bón có lượng khí thải cacbon thấp.</p>
+                                    </div>
+                                </div>
+                                <div class="item spanning-item">
+                                    <div class="thumbnail bg-default-settings bg-fullheight" style="background-image: url('/images/updated3.png');"></div>
+                                    <div class="extras">
+                                        <h3 class="title">Anfa và ENGIE thử nghiệm công nghệ hydro xanh trong sản xuất phân bón</h3>
+                                        <p>Trong một thỏa thuận được ký ngày hôm nay, Anfa và Nel xác nhận tham vọng chung của họ trong việc phát triển hydro sạch sẽ cho phép Anfa thực hiện sản xuất phân bón có lượng khí thải cacbon thấp.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-anfa-layout">
+                        <div class="container">
+                            <h2 class="pageAnfaHeading pageHeading text-center grid-anfa-layout-sp">Tham gia hành trình của chúng tôi để phát triển sáng tạo</h2>
+                            <p class="text-center">Cho dù bạn là sinh viên hay một chuyên gia, chúng tôi muốn làm việc với bạn để phát triển các giải pháp sáng tạo nhằm nuôi thế giới một cách có trách nhiệm và bảo vệ hành tinh.</p>
+                            <div class="grid-two-columns grid-anfa-layout-sp grid-anfa-featured-spanning __large">
+                                <div class="item spanning-item">
+                                    <div class="thumbnail bg-default-settings bg-fullheight" style="background-image: url('/images/join1.png');"></div>
+                                    <div class="extras">
+                                        <h3 class="title">Một khoản đầu tư tốt</h3>
+                                        <p>
+                                            Mọi người đều nói về sự đổi mới - chúng tôi làm điều đó! Chúng tôi phát triển các giải pháp mới trong tự động hóa và số hóa, nền kinh tế vòng tròn, amoniac xanh và hơn thế nữa, đồng thời mong muốn hợp tác với
+                                            cá nhà đầu tư để thực hiện sứ mệnh của chúng tôi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item spanning-item">
+                                    <div class="thumbnail bg-default-settings bg-fullheight" style="background-image: url('/images/join2.png');"></div>
+                                    <div class="extras">
+                                        <h3 class="title">Năng lực</h3>
+                                        <p>Ý tưởng xây sựng tàu điện tự hành đầu tiên trên thế giới hay thậm chí trồng khoai tây trên sao Hỏa có khiến bạn hứng thú không? Nếu vậy, bạn có muốn làm việc tại Anfa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+                    
+            
+        </div>        
+
+        <footer id="colon">
+            <span class="anfa-delimiter-box"></span>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="grid-three-columns">
+                            <div class="ft-column">
+                                <h4>Quy tắc ứng xử</h4>
+                                <h2>Liên hệ chúng tôi</h2>
+                                <figure>
+                                    <p>Địa chỉ: Lô 84 mặt bằng 2107, phường Đông Hải, Thành phố Thanh Hóa</p>
+                                    <p>Hotline: <a href="tel:02373755686">0237 3755 686</a></p>
+                                    <p>Email: <a href="mailto:info@phanbonhuunghi.vn">info@phanbonhuunghi.vn</a></p>
+                                </figure>
+                            </div>
+            
+                            <div class="ft-column">
+                                <h4>Nơi chúng tôi hoạt động</h4>
+                                <h2>Điều hướng</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Sơ lược về Anfa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Nghề nghiệp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Cơ quan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Giải pháp dinh dưỡng cây trồng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ft-column">
+                                <h4>Bản đồ</h4>
+                                <h2>Theo chúng tôi</h2>
+                                <div class="ft-social flex-layout flex-justify-space-between">
+                                    <a class="fb" href="#" arial-label="facebook"> </a>
+                                    <a class="twitter" href="#" arial-label="twitter"> </a>
+            
+                                    <a class="linkedin" href="#" arial-label="linkedin"> </a><a class="youtube" href="#" arial-label="youtube"> </a>
+            
+                                    <a class="instagram" href="#" arial-label="instagram"> </a><a class="rss" href="#" arial-label="rss"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="container">
+                    <div class="wrapper">
+                        <ul class="ft-copyright">
+                            <li>
+                                <a href="#">
+                                    Tài liệu an toàn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Quyền riêng tư và pháp lý</a>
+                            </li>
+                            <li>
+                                <a href="#">Liên hệ chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="#">@2021 Phan bon Anfa</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+
+        <div id="navigation-sidebar">
+            <a class="fb-messenger" href="#">
+            </a>
+            <a class="phone-contact" href="#"></a>
+        </div>
+        
+     
+    </body>
+    
+    
+    
+    
+</html>

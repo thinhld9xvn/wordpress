@@ -1,0 +1,334 @@
+@media (width: 1340px),
+        (min-width: 1340px) {
+
+    .container {
+        width: 80%;
+    }
+
+}
+
+@media (width: 1200px), 
+            (min-width: 1200px) and (max-width: 1340px) {
+    .container {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%; 
+        padding: 0 10px !important;
+    }
+
+    .__element-shift-30 {
+        left: 0 !important;
+    }
+
+    .grid-qtservices-section  {
+
+        & .element {
+
+            & .element-container {
+
+                width: 100% !important;
+                border: none !important;
+
+                & .inner {
+                    left: 0 !important;
+                    top: 0 !important;
+                }
+
+            }
+
+        }
+
+    }
+
+    .grid-article-crl-item:after,
+    .element-rectangle-lines:before {
+        display: none !important
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .grid-qt-separate-span2 {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header-button-booking {
+        top: -70px !important;
+    }
+
+    #main-menu {
+        padding-right: 0 !important;
+    }
+}
+
+@media (width: 992px),
+        (min-width: 992px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .grid-foodst-contents {
+        padding: 5px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .contact-layout {
+
+        &  .panel {
+            padding: 10px !important;
+        }
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .grid-three-columns,
+    .grid-fours-columns {
+
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+
+    .sm-homestay-pad {
+        padding: 40px 0 40px 40px !important;
+    }    
+
+}
+
+@media (min-width: 769px) {
+
+    #main-menu {
+        & > ul {
+            display: flex !important;
+        }
+
+        & > nav {
+            display: none !important;
+        }
+    }
+
+    #slider {          
+
+        & li {
+
+            height: 100% !important;
+            width: 100% !important;
+
+            img {                    
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+
+}
+
+@media (width: 768px),
+        (max-width: 768px) { 
+
+    .xs-homestay-pad {
+        padding: 20px 0 20px 20px !important;
+    }
+
+    .xs-limit-three-lines {
+        word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .nomargin-xs {
+        margin: 0 !important;
+    }
+
+    .pad10-xs {
+        padding: 10px 0 !important;
+    }
+
+    .grid-two-columns,
+    .grid-three-columns,
+    .grid-fours-columns {
+
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-row-gap: 20px !important;
+
+        &.grid-column-no-gap {
+            grid-column-gap: 0 !important;
+        }
+
+        &.grid-row-no-gap {
+            grid-row-gap: 0 !important;
+        }
+
+    }    
+
+    .sectionHeadingTitle {
+        font-size: 25px !important;
+        text-align: center !important;
+    }
+
+    .__section-element-mt {
+        margin-top: 20px !important;
+    }
+
+    #main-menu {
+        & > ul {
+            display: none !important;
+        }
+
+        & > nav {
+            display: flex !important;
+        }
+    }
+
+    .static-xs {
+        position: static !important;
+    }
+
+    .header-wrapper.__xs {
+        display: flex !important;
+        display: -webkit-flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        -webkit-align-items: center !important;
+    }
+
+    .element-rectangle-lines {
+        padding: 0 !important;
+        &:before {
+            display: none !important;
+        }
+    }
+
+    .grid-qtservices-section {
+        padding-bottom: 0 !important;
+    }
+
+    .googlemap {
+        & iframe {
+            max-height: 300px !important;
+        }
+    }    
+
+    .__xs-section-padt20 {
+        padding-top: 20px !important;
+    } 
+    
+    .__xs-section-padb20 {
+        padding-bottom: 20px !important;
+    }
+
+    .grid-article-crl-contents,
+    .grid-foodst-contents {
+        padding: 10px !important;
+    }
+
+    .grid-qt-elem-contents {
+        padding: 20px !important;
+    }    
+
+    .element-image img,
+    .thumbnail img {
+        max-height: 300px !important;
+        width: auto !important;
+        margin: auto !important;
+        display: block !important;
+    }
+
+    .grid-foodst-item {
+        padding: 0 !important;
+    }
+
+}
+
+@media (width: 500px),
+        (min-width: 500px) and (max-width: 768px) {
+
+
+    .bxslider-qtservices-cn-wrapper {
+
+        & .bxslider-custom-controls > a {
+
+            left: calc(50% - 45px) !important;
+            left: -webkit-calc(50% - 45px) !important;
+
+            &.bx-next { 
+               
+                left: calc(50% - 4px) !important;
+                left: -webkit-calc(50% - 4px) !important;
+
+            }
+
+        }
+
+    }  
+
+    .grid-article-crl-layout.grid-three-columns,
+    .grid-galleries-layout.grid-two-columns,
+    .flex-ctinfo.grid-fours-columns,
+    .grid-footer-columns.grid-three-columns,
+    .grid-foodst-layout.grid-fours-columns {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #main-menu {      
+
+        & > nav {
+
+            & > ul.show {
+                min-width: 50% !important;
+            }
+            
+        }
+    }
+
+    .bxslider-qtservices-cn-wrapper {
+
+        & .bxslider-custom-controls > a {
+            
+            top: 0 !important;
+            right: auto !important;
+            left: calc(50% - 40px) !important;
+            left: -webkit-calc(50% - 40px) !important;
+
+            &.bx-next { 
+               
+                left: calc(50% + 1px) !important;
+                left: -webkit-calc(50% + 1px) !important;
+
+            }
+
+        }
+
+    }  
+
+}
