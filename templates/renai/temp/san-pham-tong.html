@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm tổng</title>
+    <link rel="stylesheet" href="../public/reset.css">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="../public/temp-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="undefined" crossorigin="anonymous">
+</head>
+
+<body class="font-sans">
+    <header class="header sticky top-0 z-20 bg-white">
+        <div class="flex mx-4 md:container md:mx-auto justify-end lg:justify-between py-2" style="min-height: 70px;">
+            <a class="flex" href="./index.html"> <img src="./img/logo.svg" alt="Renai VIETNAM" class="hidden lg:block"> </a>
+            <div class="container">
+                <div class="flex justify-end items-center info__items">
+                    <img src="./img/logo.svg" alt="Renai VIETNAM" style="margin-right: 40px;" class="block lg:hidden">
+                    <span>Hotline: <span class="text-primary">0123 456 789</span></span>
+                    <span class="flex"> <img src="./img/icon-mail.svg" alt="mail" class="mr-2"/> acb@gmail.com</span>
+                    <img src="./img/icon-youtube.svg" alt="YouTube" />
+                    <img src="./img/icon-facebook.svg" alt="Facebook" />
+                </div>
+
+                <div class="flex justify-end">
+                    <nav class="hidden md:flex items-center">
+                        <ul class="flex">
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./index.html">TRANG CHỦ</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="mr-3 lg:mr-6 text-primary"><a href="./san-pham.html">SẢN PHẨM</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./du-an.html">DỰ ÁN</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./giai-phap.html">GIẢI PHÁP</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="shadow flex search">
+                        <input class="w-230 rounded p-2" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button class="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded shadow-md ml-2">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                    </div>
+                </div>
+
+                <div class="hidden md:hidden sm-nav mt-2 " id="menudown">
+                    <div class="grid grid-cols-2 text-center gap-1 py-2">
+                        <a class="hover:color-primary" href="./index.html">TRANG CHỦ</a>
+                        <a class="hover:color-primary" href="./gioi-thieu.html">GIỚI THIỆU</a>
+                        <a class="text-primary" href="./san-pham.html">SẢN PHẨM</a>
+                        <a class="hover:color-primary" href="./du-an.html">DỰ ÁN</a>
+                        <a class="hover:color-primary" href="./giai-phap.html">GIẢI PHÁP</a>
+                        <a class="hover:color-primary" href="./lien-he.html">LIÊN HỆ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__sanpham-tong">
+        <section class="hero">
+            <img src="img/gioithieu-hero.png" alt="" style="width: 100%">
+        </section>
+
+        <section class="breadcumbs">
+            <a href="index.html">Trang chủ</a>/<a href="/" class="text-primary">&ensp; Sản phẩm</a>
+        </section>
+
+        <section class="product pb-20">
+            <div class="container mx-auto grid grid-cols-3 md:grid-cols-4 gap-5">
+                <div class=" col-span-3 md:col-span-1 ">
+                    <div class="right__category">
+                        <div class="px-4 w-full">
+                            <h1 class="inline-block font-bold text-secondary mt-6 mb-3 pb-1 border-b-4 border-primary">DANH MỤC</h1>
+                        </div>
+                        <div class="shadow-md">
+                            <span class="block text-sm font-bold uppercase p-4">Tất cả sản phẩm</span>
+                            <div class="dropdown inline-block relative w-full text-sm">
+                                <button id="link1" class=" font-bold py-2 px-4  border-t border-b border-gray flex justify-between w-full">
+                                <span class="uppercase">Mitsubishi heavy industries</span>
+                                <i class="fa fa-sort-desc text-gray-500" aria-hidden="true"></i>
+                              </button>
+                                <ul id="types1" class="dropdown-menu text-gray-700 pt-1 font-bold text-gray hidden">
+                                    <span class="py-2 px-4 block whitespace-no-wrap text-primary">VRF</span>
+                                    <span class="text-gray-400 py-2 px-4 block whitespace-no-wrap">MULTI</span>
+                                    <span class="text-gray-400  py-2 px-4  block whitespace-no-wrap">PAC</span>
+                                </ul>
+                            </div>
+                            <div class="dropdown inline-block relative w-full text-sm">
+                                <button class=" font-bold py-2 px-4  border-t border-b border-gray flex justify-between w-full">
+                                    <span class="uppercase">Tica</span>
+                                    <i class="fa fa-sort-desc text-gray-500" aria-hidden="true"></i>
+                                  </button>
+                            </div>
+                            <div class="dropdown inline-block relative w-full text-sm">
+                                <button class=" font-bold py-2 px-4  border-t border-b border-gray flex justify-between w-full">
+                                    <span class="uppercase">Giải pháp môi trường - khí</span>
+                                    <i class="fa fa-sort-desc text-gray-500" aria-hidden="true"></i>
+                                  </button>
+                            </div>
+                            <div class="dropdown inline-block relative w-full text-sm">
+                                <button class=" font-bold py-2 px-4  border-t border-gray flex justify-between w-full">
+                                    <span class="uppercase">Giải pháp môi trường - nước</span>
+                                    <i class="fa fa-sort-desc text-gray-500" aria-hidden="true"></i>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:col-span-3">
+                    <div class="grid grid-cols-3 md:grid-cols-3 gap-5">
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-1.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Dàn lạnh áp trần Điều Hoà Trung Tâm Mitsubishi Heavy FDE56KXZE1
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-2.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Hệ thống điều hoà không khí trung tâm Mitsubishi Electric (VRF) - City Multi
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-3.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Máy lạnh âm trần Điều Hoà Trung Tâm Mitsubishi Heavy Cassette FDTC28KXE6F
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-1.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Dàn lạnh áp trần Điều Hoà Trung Tâm Mitsubishi Heavy FDE56KXZE1
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-2.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Hệ thống điều hoà không khí trung tâm Mitsubishi Electric (VRF) - City Multi
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-3.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Máy lạnh âm trần Điều Hoà Trung Tâm Mitsubishi Heavy Cassette FDTC28KXE6F
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-1.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Dàn lạnh áp trần Điều Hoà Trung Tâm Mitsubishi Heavy FDE56KXZE1
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-2.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Hệ thống điều hoà không khí trung tâm Mitsubishi Electric (VRF) - City Multi
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-3.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Máy lạnh âm trần Điều Hoà Trung Tâm Mitsubishi Heavy Cassette FDTC28KXE6F
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-1.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Dàn lạnh áp trần Điều Hoà Trung Tâm Mitsubishi Heavy FDE56KXZE1
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-2.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Hệ thống điều hoà không khí trung tâm Mitsubishi Electric (VRF) - City Multi
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card p-5">
+                            <a class="hover:color-secondary" href="./san-pham-chi-tiet.html">
+                                <div>
+                                    <img src="./img/san-pham/sp-tong-3.png" alt="Hình ảnh sản phẩm" style="width: 100%" />
+                                    <div class="font-bold py-10">
+                                        Máy lạnh âm trần Điều Hoà Trung Tâm Mitsubishi Heavy Cassette FDTC28KXE6F
+                                    </div>
+                                </div>
+                                <div class='text-primary flex justify-center'>
+                                    Chi tiết
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-secondary footer py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 container mx-auto">
+            <div class="col-span-2 mx-4 md:mx-0">
+                <div class="footer__contact">
+                    <div class="h-small">THÔNG TIN LIÊN HỆ</div>
+                    <div class="h-large">CÔNG TY CỔ PHẦN RENAI VIỆT NAM</div>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary"> Trụ sở chính</span>: Văn phòng 5 Nhà Nối 18T1-18T2 KĐT Trung Hòa, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</div>
+                    </span>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary"> Văn phòng giao dịch </span> : P401 34T Hoàng Đạo Thúy, Trung Hòa, Nhân Chính
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary">  Kho hàng </span>: Km 10+200 Đại lộ Thăng Long, An Khánh, Hoài Đức, Hà Nội
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./img/u_phone-pause.svg" alt="Phone"> 024 000 00 - 090 123 456</div>
+                    <div>
+                        <img src="./img/fi_mail.svg" alt="Mail"> renaivietnam@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="mx-4 md:mx-0 mt-4 md:mt-0">
+                <div class="footer__policy">
+                    <div class="h-small">CHÍNH SÁCH BÁN HÀNG</div>
+                    <div>
+
+                        Bảng Báo Giá Lắp Đặt Điều Hòa</div>
+                    <div>
+                        Chính Sách Đổi Trả Hàng</div>
+                    <div>Chính Sách Bảo Trì, Bảo Hành</div>
+                    <div> Chính Sách Vận Chuyển</div>
+                    <div>Chính Sách Bảo Mật Thông Tin</div>
+                    <div>Chính Sách Thanh Toán </div>
+                    <div> Hướng Dẫn Trả Góp</div>
+                </div>
+            </div>
+            <div class=" mt-4 md:mt-0">
+                <div class="footer__social mt-4">
+                    <div class="flex justify-center h-small">
+                        LIÊN KẾT MẠNG XÃ HỘI
+                    </div>
+                    <div class="flex justify-around">
+                        <a href="https://www.youtube.com/" class="btn">
+                            <img src="./img/icon-youtube_2.svg" alt="YouTube">
+                        </a>
+                        <a href="https://www.facebook.com/" class="btn">
+                            <img src="./img/icon-fb_2.svg" alt="Facebook">
+                        </a>
+                        <a href="https://chat.zalo.me/" class="btn">
+                            <img src="./img/icon-zalo_2.svg" alt="Zalo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

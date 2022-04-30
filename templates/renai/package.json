@@ -1,0 +1,26 @@
+{
+  "name": "gco-renai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  },
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huuthangnguyen98/gco-renai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huuthangnguyen98/gco-renai/issues"
+  },
+  "homepage": "https://github.com/huuthangnguyen98/gco-renai#readme"
+}

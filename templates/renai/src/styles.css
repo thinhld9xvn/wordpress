@@ -1,0 +1,27 @@
+@import '../public/font/font.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.breadcumbs{
+    @apply text-sm flex justify-center py-10
+}
+
+.header {
+    @apply  border-b-2 border-primary
+}
+
+.tamnhin, .sumenh, .giatricotloi p{
+    @apply text-sm
+}
+
+.main__sanpham .mitsu_type {
+    @apply bg-renai-gray py-5 flex items-center px-2
+}
+
+.mitsu_type.active {
+    @apply text-white bg-primary
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="../public/reset.css" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="stylesheet" href="../public/temp-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="undefined" crossorigin="anonymous" />
+         
+
+    <!-- bxslider -->
+    <link rel="stylesheet" href="./bxslider/jquery.bxslider.min.css" type="text/css" />    
+    <!-- #bxslider -->
+</head>
+
+<body class="font-sans">
+    <header class="sticky top-0 z-20 bg-white py-2">
+        <div class="container">
+            <div class="header-wrapper flex justify-between items-center">
+                <div id="logo" class="header-left">
+                    <a href="./index.html"> <img src="./img/logo.svg" alt="Renai VIETNAM" class="" /> </a>
+                </div>
+                <div class="header-right">
+                    <div class="header-top contact-info __primary flex justify-end items-center info__items">
+                        <span><span class="caption hidden-xs">Hotline:</span> <span class="fa fa-volume-control-phone hidden-md hidden-sm"></span> <span class="text-primary">0123 456 789</span></span>
+                        <span class="flex"> <img src="./img/icon-mail.svg" alt="mail" class="mr-2" /> acb@gmail.com</span>
+                        <img src="./img/icon-youtube.svg" alt="YouTube" />
+                        <img src="./img/icon-facebook.svg" alt="Facebook" />
+                    </div>
+                    <div class="header-top contact-info __xs flex justify-end items-center info__items">
+                        <a href="tel:0123456789"><span class="fa fa-volume-control-phone hidden-md hidden-sm"></span></a>
+                    
+                        <a href="mailto:acb@gmail.com"><span class="fa fa-envelope hidden-md hidden-sm"></span></a><img src="./img/icon-youtube.svg" alt="YouTube" />
+                        <img src="./img/icon-facebook.svg" alt="Facebook" />
+                    </div>
+                    
+
+                    <div class="header-secondary flex justify-center">
+                        <nav class="primary-menu items-center">
+                            <ul class="flex">
+                                <li class="mr-3 lg:mr-6 text-primary"><a href="./index.html">TRANG CHỦ</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./san-pham.html">SẢN PHẨM</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary has-childrens">
+                                        <a href="./du-an.html">DỰ ÁN</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">Dự án 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dự án 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dự án 3</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./giai-phap.html">GIẢI PHÁP</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./lien-he.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search-box shadow flex search" style="">
+                            <input class="w-230 rounded p-2" type="text" placeholder="Tìm kiếm sản phẩm" style="" />
+                            <button class="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-menu">
+                            <button id="menu" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded shadow-md ml-2">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                            <ul>
+                                <li class="mr-3 lg:mr-6 text-primary"><a href="./index.html">TRANG CHỦ</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./gioi-thieu.html">GIỚI THIỆU</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./san-pham.html">SẢN PHẨM</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary">
+                                        <a href="./du-an.html">DỰ ÁN</a>
+                                        <span class="toggle"></span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">Dự án 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dự án 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dự án 3</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./giai-phap.html">GIẢI PHÁP</a></li>
+                                <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./lien-he.html">LIÊN HỆ</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="intro-page">
+        <section class="hero">
+            <img src="img/gioithieu-hero.png" alt="" style="width: 100%">
+        </section>
+
+        <section class="breadcumbs">
+            <a href="index.html">Trang chủ</a>/<a href="/" class="text-primary">&ensp; Giới thiệu</a>
+        </section>
+
+        <section class="tamnhin lg:bg-renai-light-gray">
+            <div class="container">
+                <div class="grid-two-columns">
+                    <div class="element flex:second">
+                        <img src="./img/img-tamnhin.png" alt="Thiết bị điều hoà" style="width: 100%">
+                    </div>
+                    <div class="element flex:first flex items-end justify-center flex-direction-column">
+                        <h1 class="text-secondary font-bold text-center lg:text-right mb-4 "><span class="border-b-4 border-primary">Tầm nhìn</span></h1>
+                        <p class="grid-limit-five-lines">
+                            orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat , vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sumenh lg:bg-renai-light-gray my-5">
+            <div class="container">
+                
+                <div class="grid-two-columns">
+                    <div class="element flex:first">
+                        <img src="./img/img-sumenh.png" alt="Cửa hàng" style="width: 100%">
+                    </div>
+                    <div class="element flex:second flex items-start justify-center flex-direction-column">
+                        <h1 class="text-secondary font-bold text-center lg:text-left mb-4"><span class="border-b-4 border-primary">Sứ mệnh</span></h1>
+                        <p class="grid-limit-five-lines">
+                            orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat , vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tamnhin lg:bg-renai-light-gray">
+            <div class="container">
+
+                <div class="grid-two-columns">
+               
+                    <div class="element flex:second">
+                        <img src="./img/img-giatricotloi.png" alt="Thiết bị điều hoà" style="width: 100%">
+                    </div>
+                    <div class="element flex:first flex items-end justify-center flex-direction-column">
+                        <h1 class="text-secondary font-bold text-center lg:text-right mb-4 "><span class="border-b-4 border-primary lg:border-none">Giá </span><span class="border-b-4 border-primary">trị cốt lõi</span></h1>
+                        <p class="grid-limit-five-lines">
+                            orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat , vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="gallery my-10">
+            <div class="container">
+                <h1 class="text-secondary font-bold text-center mb-4">Thư viện ảnh</h1>
+                <div class="carousel relative bg-white">
+                    <div class="carousel-inner inner-w70 relative overflow-hidden w-full">
+                        <!--Slide 1-->
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="block h-full w-full text-white">
+                                <img src="./img/img-gallery.png" alt="" class="w-full">
+                            </div>
+                        </div>
+                        <label for="carousel-3" class="prev opacity-50 control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-10 my-auto">‹</label>
+                        <label for="carousel-2" class="next opacity-50 control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-10 my-auto">›</label>
+
+                        <!--Slide 2-->
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="block h-full w-full text-white">
+                                <img src="./img/img-gallery.png" alt="" class="w-full">
+                            </div>
+
+                        </div>
+                        <label for="carousel-1" class="prev opacity-50 control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-10 my-auto">‹</label>
+                        <label for="carousel-3" class="next opacity-50 control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-10 my-auto">›</label>
+
+                        <!--Slide 3-->
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item absolute opacity-0">
+                            <div class="block h-full w-full text-white">
+                                <img src="./img/img-gallery.png" alt="" class="w-full">
+                            </div>
+
+                        </div>
+                        <label for="carousel-2" class="prev opacity-50 control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-10 my-auto">‹</label>
+                        <label for="carousel-1" class="next opacity-50 control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-10 my-auto">›</label>
+
+                        <!-- Add additional indicators for each slide-->
+                        <ol class="carousel-indicators">
+                            <li class="inline-block mr-3">
+                                <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary footer py-10">
+        <div class="container">
+            <div class="grid-three-columns">
+                <div class="footer-column">
+                    <div class="footer__contact">
+                        <div class="h-small">THÔNG TIN LIÊN HỆ</div>
+                        <div class="h-large">CÔNG TY CỔ PHẦN RENAI VIỆT NAM</div>
+                        <div>
+                            <img src="./img/fi_map-pin.svg" alt="Pin" />
+                            <span> <span class="text-primary"> Trụ sở chính</span>: Văn phòng 5 Nhà Nối 18T1-18T2 KĐT Trung Hòa, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam </span>
+                        </div>
+
+                        <div>
+                            <img src="./img/fi_map-pin.svg" alt="Pin" />
+                            <span> <span class="text-primary"> Văn phòng giao dịch </span> : P401 34T Hoàng Đạo Thúy, Trung Hòa, Nhân Chính </span>
+                        </div>
+                        <div>
+                            <img src="./img/fi_map-pin.svg" alt="Pin" />
+                            <span> <span class="text-primary"> Kho hàng </span>: Km 10+200 Đại lộ Thăng Long, An Khánh, Hoài Đức, Hà Nội </span>
+                        </div>
+                        <div><img src="./img/u_phone-pause.svg" alt="Phone" /> 024 000 00 - 090 123 456</div>
+                        <div><img src="./img/fi_mail.svg" alt="Mail" /> renaivietnam@gmail.com</div>
+                    </div>
+                </div>
+               <div class="footer-column">
+                    <div class="footer__policy">
+                        <div class="h-small">CHÍNH SÁCH BÁN HÀNG</div>
+                        <div>
+                            Bảng Báo Giá Lắp Đặt Điều Hòa
+                        </div>
+                        <div>
+                            Chính Sách Đổi Trả Hàng
+                        </div>
+                        <div>Chính Sách Bảo Trì, Bảo Hành</div>
+                        <div>Chính Sách Vận Chuyển</div>
+                        <div>Chính Sách Bảo Mật Thông Tin</div>
+                        <div>Chính Sách Thanh Toán</div>
+                        <div>Hướng Dẫn Trả Góp</div>
+                    </div>
+                    <div class="footer__social mt-4">
+                        <div class="flex justify-center h-small">
+                            LIÊN KẾT MẠNG XÃ HỘI
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./img/icon-youtube_2.svg" alt="YouTube" />
+                            <img src="./img/icon-fb_2.svg" alt="Facebook" />
+                            <img src="./img/icon-zalo_2.svg" alt="Zalo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="h-small">LIÊN HỆ VỚI CHÚNG TÔI</div>
+                    <div class="contact-form">
+                        <form id="frmContact" class="frmContact" method="post" action="">
+                            <legend>
+                                <div class="field">
+                                    <input type="text" class="rn-form-control" name="txtFullName" value="" placeholder="Họ và tên *" />
+                                </div>
+                                <div class="field">
+                                    <input type="email" class="rn-form-control" name="txtEmail" value="" placeholder="Email" />
+                                </div>
+                                <div class="field">
+                                    <input type="text" class="rn-form-control" name="txtPhone" value="" placeholder="Số điện thoại *" />
+                                </div>
+                                <div class="field">
+                                    <textarea class="rn-form-control" name="txtNoiDung" placeholder="Nội dung"></textarea>
+                                </div>
+                                <div class="field sm">
+                                    <button type="submit" class="btnSendContact">Gửi liên hệ</button>
+                                </div>
+                            </legend>
+                        </form>
+                    </div>
+                </div>
+            </div><div class="ft-copyright text-center">
+    <span class="align-middle">©</span> <span>2021 - Copyright by Công Ty Cổ Phần Renai Việt Nam</span>
+                    
+                    
+                </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>  
+    <script type="text/javascript" src="./bxslider/jquery.bxslider.min.js"></script>        
+
+    <script type="module" src="./js/jquery.customize.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

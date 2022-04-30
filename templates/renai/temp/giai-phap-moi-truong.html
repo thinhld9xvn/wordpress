@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải pháp môi trường</title>
+    <link rel="stylesheet" href="../public/reset.css">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="../public/temp-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="undefined" crossorigin="anonymous">
+</head>
+
+<body class="font-sans">
+    <header class="header sticky top-0 z-20 bg-white">
+        <div class="flex mx-4 md:container md:mx-auto justify-end lg:justify-between py-2" style="min-height: 70px;">
+            <a class="flex" href="./index.html"> <img src="./img/logo.svg" alt="Renai VIETNAM" class="hidden lg:block"> </a>
+            <div class="container">
+                <div class="flex justify-end items-center info__items">
+                    <img src="./img/logo.svg" alt="Renai VIETNAM" style="margin-right: 40px;" class="block lg:hidden">
+                    <span>Hotline: <span class="text-primary">0123 456 789</span></span>
+                    <span class="flex"> <img src="./img/icon-mail.svg" alt="mail" class="mr-2"/> acb@gmail.com</span>
+                    <img src="./img/icon-youtube.svg" alt="YouTube" />
+                    <img src="./img/icon-facebook.svg" alt="Facebook" />
+                </div>
+
+                <div class="flex justify-end">
+                    <nav class="hidden md:flex items-center">
+                        <ul class="flex">
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./index.html">TRANG CHỦ</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./san-pham.html">SẢN PHẨM</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./du-an.html">DỰ ÁN</a></li>
+                            <li class="mr-3 lg:mr-6 text-primary"><a href="./giai-phap.html">GIẢI PHÁP</a></li>
+                            <li class="mr-3 lg:mr-6 hover:color-primary"><a href="./lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="shadow flex search">
+                        <input class="w-230 rounded p-2" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button class="bg-white w-auto flex justify-end items-center text-blue-500 p-2 hover:text-blue-400">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded shadow-md ml-2">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                    </div>
+                </div>
+
+                <div class="hidden md:hidden sm-nav mt-2 " id="menudown">
+                    <div class="grid grid-cols-2 text-center gap-1 py-2">
+                        <a class="hover:color-primary" href="./index.html">TRANG CHỦ</a>
+                        <a class="hover:color-primary" href="./gioi-thieu.html">GIỚI THIỆU</a>
+                        <a class="hover:color-primary" href="./san-pham.html">SẢN PHẨM</a>
+                        <a class="hover:color-primary" href="./du-an.html">DỰ ÁN</a>
+                        <a class="text-primary" href="./giai-phap.html">GIẢI PHÁP</a>
+                        <a class="hover:color-primary" href="./lien-he.html">LIÊN HỆ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__giaiphap">
+        <section class="hero">
+            <img src="img/gp-hero.png" class="w-full">
+        </section>
+
+        <section class="breadcumbs">
+            <a href="index.html">Trang chủ</a>/<a href="/" class="text-primary">&ensp; Giải pháp</a>
+        </section>
+
+        <section class="duan container mx-auto mt-10 grid md:grid-cols-3">
+
+
+            <div class="left col-span-2">
+                <div class="grid">
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4">
+                            <div class="">
+                                <img src="./img/duan-b.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4 my-4">
+                            <div class="">
+                                <img src="./img/duan-b-2.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4">
+                            <div class="">
+                                <img src="./img/duan-b.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4 my-4">
+                            <div class="">
+                                <img src="./img/duan-b-2.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4">
+                            <div class="">
+                                <img src="./img/duan-b.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4 my-4">
+                            <div class="">
+                                <img src="./img/duan-b-2.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4">
+                            <div class="">
+                                <img src="./img/duan-b.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4 my-4">
+                            <div class="">
+                                <img src="./img/duan-b-2.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4">
+                            <div class="">
+                                <img src="./img/duan-b.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./chi-tiet-giai-phap.html" class="hover:color-secondary">
+                        <div class="grid grid-cols-4 my-4">
+                            <div class="">
+                                <img src="./img/duan-b-2.png" alt="Bản thiết kế dự án" class="w-full">
+                            </div>
+                            <div class="p-5 col-span-3">
+                                <h2 class="font-bold mb-2 ">Giải pháp điều hòa không khí cho khách sạn, nhà nghỉ
+                                </h2>
+                                <p class="my-4 color-dark">
+                                    Nên lắp loại điều hòa nào cho khách sạn để thể hiện được đẳng cấp và giá trị cho công trình? Đừng bỏ lỡ bài viết này nhé.
+                                </p>
+                                <div class="card__footer flex justify-end items-center text-primary">
+                                    <span>Xem chi tiết</span> <i class="fa fa-angle-double-right ml-4" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <section class="paging my-10">
+                    <!-- This example requires Tailwind CSS v2.0+ -->
+                    <div class="flex-1 flex sitems-center justify-center">
+                        <div>
+                            <nav class="relative z-0 inline-flex rounded-md" aria-label="Pagination">
+                                <a href="#" class="relative inline-flex items-center px-4 mx-2 py-1 rounded-l-md   bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Previous</span>
+                                    <!-- Heroicon name: solid/chevron-left -->
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                                </a>
+                                <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" -->
+                                <a href="#" aria-current="page" class="mx-2 z-10 bg-red-500 text-white relative inline-flex items-center px-4 py-1  text-sm font-medium">
+                    1
+                  </a>
+                                <a href="#" class="mx-2  bg-white text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-1  text-sm font-medium">
+                    2
+                  </a>
+                                <a href="#" class="mx-2  bg-white text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-1  text-sm font-medium">
+                    3
+                  </a>
+                                <a href="#" class="mx-2  bg-white text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-1  text-sm font-medium">
+                    4
+                  </a>
+                                <a href="#" class="mx-2  bg-white text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-1  text-sm font-medium">
+                    5
+                  </a>
+                                <span class="relative inline-flex items-center px-4 py-1  bg-white text-sm font-medium text-gray-700">
+                    ...
+                  </span>
+                                <a href="#" class="relative inline-flex items-center px-2 py-1 rounded-r-md   bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Next</span>
+                                    <!-- Heroicon name: solid/chevron-right -->
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-span-3 md:col-span-1">
+                <div>
+                    <h1 class="text-primary font-bold border-b-2 border-gray-500 mb-4 ml-4 pb-2">Dự án nổi bật</h1>
+                    <ul>
+                        <li>
+                            <a class="hover:color-secondary" href="./chi-tiet-giai-phap.html">
+                                <div class="grid grid-cols-4 m-4">
+                                    <div class="">
+                                        <img src="./img/danb-1.png" alt="Bản thiết kế dự án" class="w-full">
+                                    </div>
+                                    <div class="px-5 col-span-3">
+                                        <h2 class="font-bold mb-2 text-sm ">Phân Phối Điều Hòa Trung Tâm - Khảo Sát Tận Công Trình
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:color-secondary" href="./chi-tiet-giai-phap.html">
+                                <div class="grid grid-cols-4 m-4">
+                                    <div class="">
+                                        <img src="./img/danb-2.png" alt="Bản thiết kế dự án" class="w-full">
+                                    </div>
+                                    <div class="px-5 col-span-3">
+                                        <h2 class="font-bold mb-2 text-sm">Phân Phối Điều Hòa Trung Tâm - Khảo Sát Tận Công Trình
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:color-secondary" href="./chi-tiet-giai-phap.html">
+                                <div class="grid grid-cols-4 m-4">
+                                    <div class="">
+                                        <img src="./img/danb-3.png" alt="Bản thiết kế dự án" class="w-full">
+                                    </div>
+                                    <div class="px-5 col-span-3">
+                                        <h2 class="font-bold mb-2 text-sm">Phân Phối Điều Hòa Trung Tâm - Khảo Sát Tận Công Trình
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:color-secondary" href="./chi-tiet-giai-phap.html">
+                                <div class="grid grid-cols-4 m-4">
+                                    <div class="">
+                                        <img src="./img/danb-4.png" alt="Bản thiết kế dự án" class="w-full">
+                                    </div>
+                                    <div class="px-5 col-span-3">
+                                        <h2 class="font-bold mb-2 text-sm">Phân Phối Điều Hòa Trung Tâm - Khảo Sát Tận Công Trình
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:color-secondary" href="./chi-tiet-giai-phap.html">
+                                <div class="grid grid-cols-4 m-4">
+                                    <div class="">
+                                        <img src="./img/danb-5.png" alt="Bản thiết kế dự án" class="w-full">
+                                    </div>
+                                    <div class="px-5 col-span-3">
+                                        <h2 class="font-bold mb-2 text-sm">Phân Phối Điều Hòa Trung Tâm - Khảo Sát Tận Công Trình
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="bg-secondary footer py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 container mx-auto">
+            <div class="col-span-2 mx-4 md:mx-0">
+                <div class="footer__contact">
+                    <div class="h-small">THÔNG TIN LIÊN HỆ</div>
+                    <div class="h-large">CÔNG TY CỔ PHẦN RENAI VIỆT NAM</div>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary"> Trụ sở chính</span>: Văn phòng 5 Nhà Nối 18T1-18T2 KĐT Trung Hòa, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</div>
+                    </span>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary"> Văn phòng giao dịch </span> : P401 34T Hoàng Đạo Thúy, Trung Hòa, Nhân Chính
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./img/fi_map-pin.svg" alt="Pin">
+                        <span>
+                        <span class="text-primary">  Kho hàng </span>: Km 10+200 Đại lộ Thăng Long, An Khánh, Hoài Đức, Hà Nội
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./img/u_phone-pause.svg" alt="Phone"> 024 000 00 - 090 123 456</div>
+                    <div>
+                        <img src="./img/fi_mail.svg" alt="Mail"> renaivietnam@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="mx-4 md:mx-0 mt-4 md:mt-0">
+                <div class="footer__policy">
+                    <div class="h-small">CHÍNH SÁCH BÁN HÀNG</div>
+                    <div>
+
+                        Bảng Báo Giá Lắp Đặt Điều Hòa</div>
+                    <div>
+                        Chính Sách Đổi Trả Hàng</div>
+                    <div>Chính Sách Bảo Trì, Bảo Hành</div>
+                    <div> Chính Sách Vận Chuyển</div>
+                    <div>Chính Sách Bảo Mật Thông Tin</div>
+                    <div>Chính Sách Thanh Toán </div>
+                    <div> Hướng Dẫn Trả Góp</div>
+                </div>
+            </div>
+            <div class=" mt-4 md:mt-0">
+                <div class="footer__social mt-4">
+                    <div class="flex justify-center h-small">
+                        LIÊN KẾT MẠNG XÃ HỘI
+                    </div>
+                    <div class="flex justify-around">
+                        <a href="https://www.youtube.com/" class="btn">
+                            <img src="./img/icon-youtube_2.svg" alt="YouTube">
+                        </a>
+                        <a href="https://www.facebook.com/" class="btn">
+                            <img src="./img/icon-fb_2.svg" alt="Facebook">
+                        </a>
+                        <a href="https://chat.zalo.me/" class="btn">
+                            <img src="./img/icon-zalo_2.svg" alt="Zalo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
