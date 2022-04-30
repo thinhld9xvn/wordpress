@@ -1,0 +1,18 @@
+.block-title-primary {
+  margin-bottom: 37px;
+  h2 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: $color-gray;
+    margin-bottom: 16px;
+  }
+  p {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: $color-gray;
+  }
+}

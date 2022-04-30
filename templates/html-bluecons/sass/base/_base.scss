@@ -1,0 +1,38 @@
+a {
+  display: block;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea {
+  font-family: "Google Sans" !important;
+  outline: none;
+  line-height: 1;
+  &:hover {
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+.content {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1110px;
+  }
+}

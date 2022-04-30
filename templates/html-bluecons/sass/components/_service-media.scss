@@ -1,0 +1,46 @@
+.service-media {
+  &-inner {
+    @include fBCenter;
+    flex-wrap: wrap;
+    .block-card {
+      width: calc(50% - 21px);
+      height: 346px;
+      position: relative;
+      overflow: hidden;
+      @include maxWidth(576px) {
+        width: calc(50% - 10px);
+        height: 250px;
+      }
+      &:hover {
+        a {
+          transform: translate(-50%, -70%);
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        @include size(100%);
+        top: 0;
+        left: 0;
+        background: rgba(17, 17, 17, 0.4);
+      }
+      img {
+        @include size(100%);
+        object-fit: cover;
+      }
+      a {
+        @include transition;
+        @include absCenter;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: $white-color;
+        font-family: $font-secondary;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+  }
+}

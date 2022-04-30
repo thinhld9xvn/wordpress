@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Black.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-BlackItalic.woff2")
+      format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Bold.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-BoldItalic.woff2")
+      format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-LightItalic.woff2")
+      format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Light.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Italic.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-MediumItalic.woff2")
+      format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Thin.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Medium.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-Regular.woff2") format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../libs/font-google-sans/GoogleSans-ThinItalic.woff2")
+      format("woff2"),
+    url("../libs/font-google-sans/GoogleSans-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  // !important;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  color: $color-gray;
+}

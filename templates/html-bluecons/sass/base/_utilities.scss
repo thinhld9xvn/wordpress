@@ -1,0 +1,27 @@
+body {
+  background-color: #e5e5e5;
+}
+.title-image {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.title-card {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  color: #000000;
+}
+.bg-overlay {
+  &::after {
+    background-color: rgba(17, 17, 17, 0.4);
+  }
+}
+.bg-overlay-banner {
+  &::after {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

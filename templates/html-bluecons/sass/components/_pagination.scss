@@ -1,0 +1,45 @@
+.paginate {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &.active {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    &:hover {
+      span {
+        color: #2c2c2c;
+      }
+    }
+    span {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: $black-color;
+    }
+    img {
+      margin-left: 9px;
+    }
+    &:first-of-type {
+      img {
+        transform: rotate(180deg);
+        margin-right: 9px;
+        margin-left: 0;
+      }
+    }
+  }
+  &-num {
+    span {
+      font-size: 17px;
+      line-height: 21px;
+      color: $black-color;
+    }
+  }
+}

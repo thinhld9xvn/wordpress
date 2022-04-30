@@ -1,0 +1,9 @@
+.products {
+  margin: 90px 0 49px 0;
+  @include maxWidth(576px) {
+    margin: 70px 0 20px 0;
+  }
+  .block-card {
+    margin-bottom: 41px;
+  }
+}
