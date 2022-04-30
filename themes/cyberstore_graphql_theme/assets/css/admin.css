@@ -1,0 +1,36 @@
+#ajax-loader {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .9);
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    z-index: -1;
+    opacity: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+
+}
+
+#ajax-loader.show {
+    z-index: 99999999;
+    opacity: 1;
+}
+
+.gatsby-processing {
+
+    padding-left: 10px;
+    color: #05ff05;             
+
+}
+
+.disabled {
+    pointer-events: none;
+}

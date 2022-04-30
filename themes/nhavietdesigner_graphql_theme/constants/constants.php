@@ -1,0 +1,71 @@
+<?php
+    DEFINE('HOME_PID', 5);
+    DEFINE('GIOITHIEU_PID', 67);
+    DEFINE('DUAN_PID', 64);
+    DEFINE('NHAMAY_PID', 337);
+    DEFINE('DUANTK_PID', 296);
+    DEFINE('DUANTC_PID', 324);
+    DEFINE('DUANSP_PID', 385);
+    DEFINE('NEWS_PID', 55);
+    DEFINE('RECRUIT_PID', 43);
+
+    DEFINE('PROJECT_POST_TYPE', 'project');
+    DEFINE('DESIGN_POST_TYPE', 'design');
+    DEFINE('PRODUCTS_POST_TYPE', 'productnv');
+    DEFINE('PRODUCTS_TAXONOMY', 'productnv1');
+
+    DEFINE('NEWS_SLUG_CATEGORY', 'tin-tuc');
+    DEFINE('RECRUIT_SLUG_CATEGORY', 'tuyen-dung');
+
+    DEFINE('CLASSES_DIR', get_template_directory() . '/classes');
+
+    DEFINE('ACTIONS_DIR', CLASSES_DIR . '/actions');
+    DEFINE('ACTIONS_CONSTANTS_DIR', ACTIONS_DIR . '/constants');
+
+    DEFINE('THEME_OPTIONS_DIR', CLASSES_DIR . '/theme-options');
+    DEFINE('THEME_OPTIONS_CONSTANTS_DIR', THEME_OPTIONS_DIR . '/constants');
+    DEFINE('THEME_OPTIONS_UTILS_DIR', THEME_OPTIONS_DIR . '/utils');
+
+    DEFINE('NAV_MENUS_DIR', CLASSES_DIR . '/nav-menus');
+    DEFINE('NAV_MENUS_UTILS_DIR', NAV_MENUS_DIR . '/utils');
+
+    DEFINE('BLOG_DIR', CLASSES_DIR . '/blog');
+    DEFINE('BLOG_CONSTANTS_DIR', BLOG_DIR . '/constants');
+    DEFINE('BLOG_UTILS_DIR', BLOG_DIR . '/utils');
+
+    DEFINE('POSTS_DIR', CLASSES_DIR . '/posts');
+    DEFINE('POSTS_UTILS_DIR', POSTS_DIR . '/utils');
+
+    DEFINE('PAGES_DIR', CLASSES_DIR . '/pages');
+    DEFINE('PAGES_CONSTANTS_DIR', PAGES_DIR . '/constants');
+    DEFINE('PAGES_UTILS_DIR', PAGES_DIR . '/utils');
+    
+    DEFINE('CATEGORIES_DIR', CLASSES_DIR . '/categories');
+    DEFINE('CATEGORIES_CONSTANTS_DIR', CATEGORIES_DIR . '/constants');
+    DEFINE('CATEGORIES_UTILS_DIR', CATEGORIES_DIR . '/utils');
+
+    DEFINE('DU_AN_DIR', CLASSES_DIR . '/du-an');
+    DEFINE('DU_AN_CONSTANTS_DIR', DU_AN_DIR . '/constants');
+    DEFINE('DU_AN_UTILS_DIR', DU_AN_DIR . '/utils');
+
+    DEFINE('GIOI_THIEU_DIR', CLASSES_DIR . '/gioi-thieu');
+    DEFINE('GIOI_THIEU_CONSTANTS_DIR', GIOI_THIEU_DIR . '/constants');
+    DEFINE('GIOI_THIEU_UTILS_DIR', GIOI_THIEU_DIR . '/utils');
+
+    DEFINE('NHA_MAY_DIR', CLASSES_DIR . '/nha-may');
+    DEFINE('NHA_MAY_CONSTANTS_DIR', NHA_MAY_DIR . '/constants');
+    DEFINE('NHA_MAY_UTILS_DIR', NHA_MAY_DIR . '/utils');
+
+    DEFINE('SAN_PHAM_DIR', CLASSES_DIR . '/san-pham');
+    DEFINE('SAN_PHAM_CONSTANTS_DIR', SAN_PHAM_DIR . '/constants');
+    DEFINE('SAN_PHAM_UTILS_DIR', SAN_PHAM_DIR . '/utils');
+
+    DEFINE('HOME_DIR', CLASSES_DIR . '/home');
+    DEFINE('HOME_CONSTANTS_DIR', HOME_DIR . '/constants');
+    DEFINE('HOME_UTILS_DIR', HOME_DIR . '/utils');
+
+    DEFINE('YOASTSEO_DIR', CLASSES_DIR . '/yoast-seo');
+    DEFINE('YOASTSEO_UTILS_DIR', YOASTSEO_DIR . '/utils');
+
+    DEFINE('GRAPHQL_DIR', CLASSES_DIR . '/graphql');
+    DEFINE('GRAPHQL_UTILS_DIR', GRAPHQL_DIR . '/utils');

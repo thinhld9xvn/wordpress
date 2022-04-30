@@ -1,0 +1,303 @@
+@media (min-width: 230px) {
+  #login,
+  #register {
+    background-color: #E5E5E5;
+    margin-bottom: 30px; }
+    #login .login__group,
+    #register .login__group {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+      border-radius: 2px;
+      padding: 24px 15px;
+      max-width: 368px;
+      width: 100%;
+      margin: 0 auto; }
+      #login .login__group .title__global-2,
+      #register .login__group .title__global-2 {
+        margin-bottom: 33px; }
+      #login .login__group .btn__loginFace,
+      #register .login__group .btn__loginFace {
+        margin-bottom: 12px; }
+      #login .login__group .distinction,
+      #register .login__group .distinction {
+        position: relative; }
+        #login .login__group .distinction::before, #login .login__group .distinction::after,
+        #register .login__group .distinction::before,
+        #register .login__group .distinction::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: 1px;
+          width: 50%;
+          z-index: 1;
+          background-color: #E5E5E5; }
+        #login .login__group .distinction::after,
+        #register .login__group .distinction::after {
+          left: unset;
+          right: 0; }
+        #login .login__group .distinction span,
+        #register .login__group .distinction span {
+          display: block;
+          position: relative;
+          max-width: -webkit-max-content;
+          max-width: -moz-max-content;
+          max-width: max-content;
+          width: 100%;
+          font-family: "Roboto-Regular", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          color: #808080;
+          text-align: center;
+          padding: 0 16px;
+          background-color: #fff;
+          margin: 24px auto;
+          z-index: 2; }
+      #login .login__group form .footer__form,
+      #register .login__group form .footer__form {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        #login .login__group form .footer__form a,
+        #register .login__group form .footer__form a {
+          font-size: 13px;
+          line-height: 24px;
+          color: #026AB3; }
+        #login .login__group form .footer__form p,
+        #register .login__group form .footer__form p {
+          color: #808080;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+          margin: 0 auto; }
+          #login .login__group form .footer__form p a,
+          #register .login__group form .footer__form p a {
+            font-size: 14px; }
+      #login .login__group form .btn__login,
+      #register .login__group form .btn__login {
+        margin-bottom: 12px;
+        margin-top: 30px; }
+  #account {
+    margin-bottom: 30px; }
+    #account .account__group .title__global-3 {
+      padding: 12px 20px;
+      border-bottom: 1px solid #E4E4E4;
+      margin-bottom: 0; }
+    #account .account__group .sidebar__account {
+      margin-bottom: 15px; }
+      #account .account__group .sidebar__account .sidebar__account-group {
+        background-color: #fff; }
+      #account .account__group .sidebar__account .sidebar__account-list {
+        list-style: none;
+        padding: 10px 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 0; }
+        #account .account__group .sidebar__account .sidebar__account-list li {
+          margin: 10px 0;
+          width: 100%; }
+          #account .account__group .sidebar__account .sidebar__account-list li a {
+            font-family: "Roboto-Regular", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #2B4052;
+            display: block;
+            width: 100%; }
+          #account .account__group .sidebar__account .sidebar__account-list li:hover a, #account .account__group .sidebar__account .sidebar__account-list li.active a {
+            font-family: "Roboto-Medium", sans-serif;
+            font-weight: 500;
+            color: #0F629A; }
+    #account .account__group .account__content .account__content-group {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08); }
+      #account .account__group .account__content .account__content-group form {
+        padding: 20px;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px; }
+        #account .account__group .account__content .account__content-group form .input__box {
+          margin-bottom: 0; }
+      #account .account__group .account__content .account__content-group .list__buy .list__buy-item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-bottom: 1px solid #F2F2F2; }
+        #account .account__group .account__content .account__content-group .list__buy .list__buy-item img {
+          width: 70px;
+          height: 70px;
+          margin-right: 24px; }
+        #account .account__group .account__content .account__content-group .list__buy .list__buy-item a {
+          display: block;
+          color: #1A1A1A;
+          max-width: -webkit-calc(100% - 94px);
+          max-width: -moz-calc(100% - 94px);
+          max-width: calc(100% - 94px);
+          width: 100%;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          line-height: 18px;
+          -webkit-line-clamp: 3;
+          max-height: -webkit-calc(18px * 3);
+          max-height: -moz-calc(18px * 3);
+          max-height: calc(18px * 3);
+          display: -webkit-box;
+          -webkit-box-orient: vertical; }
+        #account .account__group .account__content .account__content-group .list__buy .list__buy-item .product-cost {
+          margin-bottom: 0;
+          margin-left: auto;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content; }
+      #account .account__group .account__content .account__content-group .footer__list {
+        padding: 20px; }
+        #account .account__group .account__content .account__content-group .footer__list .total-money {
+          font-family: "Roboto-Medium", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: #333333;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          margin-left: auto; }
+          #account .account__group .account__content .account__content-group .footer__list .total-money strong {
+            display: block;
+            color: #E12730;
+            margin-left: 16px; }
+        #account .account__group .account__content .account__content-group .footer__list .btn__group {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: right;
+          -webkit-justify-content: right;
+          -moz-box-pack: right;
+          -ms-flex-pack: right;
+          justify-content: right;
+          margin-top: 20px; }
+          #account .account__group .account__content .account__content-group .footer__list .btn__group .btn__view-detail {
+            width: 160px;
+            height: 38px;
+            font-family: "Roboto-Medium", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            background: #F2F2F2;
+            border-radius: 4px; }
+    #account .account__group .account__content .btn__update {
+      width: 100%; } }
+
+@media (min-width: 480px) {
+  #account .account__group .account__content .account__content-group .list__buy .list__buy-item a {
+    max-width: 350px;
+    width: 60%; } }
+
+@media (min-width: 576px) {
+  #account .account__group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #account .account__group .sidebar__account {
+      max-width: 278px;
+      width: 30%;
+      margin-right: 30px; }
+      #account .account__group .sidebar__account .sidebar__account-group {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; }
+    #account .account__group .account__content {
+      max-width: -webkit-calc(70% - 30px);
+      max-width: -moz-calc(70% - 30px);
+      max-width: calc(70% - 30px);
+      width: 100%; }
+      #account .account__group .account__content .account__content-group .list__buy .list__buy-item a {
+        max-width: -webkit-calc(100% - 94px);
+        max-width: -moz-calc(100% - 94px);
+        max-width: calc(100% - 94px);
+        width: 100%; }
+      #account .account__group .account__content .account__content-group .list__buy .list__buy-item .product-cost {
+        margin-bottom: 0; }
+      #account .account__group .account__content .btn__update {
+        width: 160px; } }
+
+@media (min-width: 768px) {
+  #account .account__group .account__content .account__content-group .list__buy .list__buy-item a {
+    max-width: 350px;
+    width: 60%; } }
+
+@media (min-width: 992px) {
+  #login,
+  #register {
+    margin-bottom: 50px; }
+    #login .login__group,
+    #register .login__group {
+      padding: 24px; }
+  #account {
+    margin-bottom: 50px; }
+    #account .account__group .sidebar__account {
+      max-width: 278px; }
+    #account .account__group .account__content {
+      max-width: -webkit-calc(100% - 308px);
+      max-width: -moz-calc(100% - 308px);
+      max-width: calc(100% - 308px); }
+      #account .account__group .account__content .account__content-group form {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr); }
+        #account .account__group .account__content .account__content-group form .input__box.__fullwidth {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        } }
+
+@media (min-width: 1200px) {
+  #login,
+  #register {
+    margin-bottom: 60px; }
+  #account {
+    margin-bottom: 60px; } }

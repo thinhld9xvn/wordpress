@@ -1,0 +1,3 @@
+<?php
+
+    \Slider\SliderPrintHtmlUtils::render(); ?>
